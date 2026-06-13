@@ -10,6 +10,21 @@ function parseNum(str: string): number {
   return parseInt(englishStr, 10);
 }
 
+function cleanVerseText(text: string): string {
+    let cleaned = text;
+    
+    // 1. Strip the trailing verse numbers and surrounding dandas, e.g., "|| 1 ||" or "| 1 |"
+    cleaned = cleaned.replace(/\|\|?\s*[0-9०-९]+\s*\|\|?\s*$/, '');
+
+    // 2. Normalize inline double dandas to single dandas to avoid empty segments
+    cleaned = cleaned.replace(/\|\|/g, '|');
+
+    // 3. Replace square brackets with the `note[...] block to represent interpolations
+    cleaned = cleaned.replace(/\[/g, '`note[');
+    
+    return cleaned.trim();
+}
+
 async function processFile(filePath: string, outputBaseDir: string, lang: string, partNumber: number) {
   let fileContent = "";
   try {
@@ -55,32 +70,48 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
   let currentComm = new Map<number, string>();
   
   let lastN = -1;
-  let currentChapter = 0; // We start at 0 for the prologue (usually only in Part 1, but we keep the logic generic)
+  let currentChapter = 0; // We start at 0 for the prologue
 
   const flushChapter = async (chapNum: number) => {
     if (currentMula.size === 0 && currentComm.size === 0) return;
     
-    const fileName = chapNum === 0 ? "prologue.vy" : `${chapNum}.vy`;
+    // Prologue vs Chapter naming and directory
+    const isProlog = chapNum === 0;
+    const fileName = isProlog ? "prolog.vy" : `${chapNum}.vy`;
     
     // Mula stream
     if (currentMula.size > 0) {
-      const mulaStreamDir = join(outputBaseDir, `mula_${lang}`, partNumber.toString());
+      const mulaStreamDir = isProlog 
+        ? join(outputBaseDir, `mula_${lang}`, partNumber.toString(), "frontmatter")
+        : join(outputBaseDir, `mula_${lang}`, partNumber.toString());
       await mkdir(mulaStreamDir, { recursive: true });
       const mulaPath = join(mulaStreamDir, fileName);
       
       const blocks = Array.from(currentMula.entries()).sort((a,b) => a[0] - b[0]);
-      const contentToWrite = blocks.map(([n, text]) => `\`v ${n} [\n${text}\n]`).join("\n\n");
+      let contentToWrite = blocks.map(([n, text]) => `\`v ${n} [\n${cleanVerseText(text)}\n]`).join("\n\n");
+      
+      if (isProlog) {
+          contentToWrite = `\`set { scope="paratext" }\n\n` + contentToWrite;
+      }
+      
       await writeFile(mulaPath, contentToWrite, "utf8");
     }
 
     // Commentary stream
     if (currentComm.size > 0) {
-      const commStreamDir = join(outputBaseDir, `commentary_${lang}`, partNumber.toString());
+      const commStreamDir = isProlog 
+        ? join(outputBaseDir, `commentary_${lang}`, partNumber.toString(), "frontmatter")
+        : join(outputBaseDir, `commentary_${lang}`, partNumber.toString());
       await mkdir(commStreamDir, { recursive: true });
       const commPath = join(commStreamDir, fileName);
       
       const blocks = Array.from(currentComm.entries()).sort((a,b) => a[0] - b[0]);
-      const contentToWrite = blocks.map(([n, text]) => `\`v ${n} [\n${text}\n]`).join("\n\n");
+      let contentToWrite = blocks.map(([n, text]) => `\`v ${n} [\n${cleanVerseText(text)}\n]`).join("\n\n");
+      
+      if (isProlog) {
+          contentToWrite = `\`set { scope="paratext" }\n\n` + contentToWrite;
+      }
+      
       await writeFile(commPath, contentToWrite, "utf8");
     }
   };

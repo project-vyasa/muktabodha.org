@@ -24,12 +24,18 @@ export async function parseVyFile(filePath: string): Promise<Map<number, string>
 
 /**
  * Normalizes Devanagari text for comparison.
- * Removes spaces, newlines, dandas (| and ||), devanagari numbers, hyphens, and hashes.
+ * Removes spaces, newlines, dandas (| and ||), devanagari numbers, hyphens, hashes, and parentheses/brackets/commands.
  */
 function normalizeDevanagari(text: string): string {
-    return text
-        .replace(/[\s\n\r|॥।0-9०-९-#]+/g, "")
+    // 1. Remove `note commands entirely (they don't need transliteration checking since they are structure)
+    let cleaned = text.replace(/`note/g, "");
+    
+    // 2. Remove other formatting and ignore characters
+    cleaned = cleaned
+        .replace(/[\s\n\r|॥।0-9०-९-#()\[\]`]+/g, "")
         .trim();
+        
+    return cleaned;
 }
 
 async function verifyStream(iastDir: string, devDir: string, reportLines: string[], streamName: string) {
@@ -41,6 +47,25 @@ async function verifyStream(iastDir: string, devDir: string, reportLines: string
         return { total: 0, perfect: 0, mismatches: 0, missing: 0 };
     }
     
+    // Exclude subdirectories like frontmatter for iterating direct files
+    // But actually, we need to recursively verify frontmatter files!
+    // Since we only have 'frontmatter/prolog.vy', let's just do a simple flat-map or manual check.
+    const allFiles: string[] = [];
+    for (const f of files) {
+        if (f.endsWith('.vy')) {
+            allFiles.push(f);
+        } else if (f === 'frontmatter') {
+            try {
+                const fmFiles = await readdir(join(iastDir, f));
+                for (const fmf of fmFiles) {
+                    if (fmf.endsWith('.vy')) {
+                        allFiles.push(`frontmatter/${fmf}`);
+                    }
+                }
+            } catch(e) {}
+        }
+    }
+    
     reportLines.push(`\nStream: ${streamName}`);
     reportLines.push(`===================\n`);
     
@@ -49,8 +74,7 @@ async function verifyStream(iastDir: string, devDir: string, reportLines: string
     let mismatchedVerses = 0;
     let missingVerses = 0;
 
-    for (const file of files) {
-        if (!file.endsWith('.vy')) continue;
+    for (const file of allFiles) {
         
         const chapStr = file.replace('.vy', '');
         
@@ -79,13 +103,15 @@ async function verifyStream(iastDir: string, devDir: string, reportLines: string
             
             if (!devVerses.has(verseNum)) {
                 missingVerses++;
-                reportLines.push(`[MISSING] Chapter ${chapStr}, Verse ${verseNum} missing in Devanagari stream.`);
+                reportLines.push(`[MISSING] Chapter/Section ${chapStr}, Verse ${verseNum} missing in Devanagari stream.`);
                 continue;
             }
             
             const devText = devVerses.get(verseNum)!;
             
-            const transliteratedDev = transliterateIastToDevanagari(iastText);
+            // Note: we remove `note before transliteration so it doesn't get converted into devanagari "नोते"
+            const cleanIast = iastText.replace(/`note/g, "");
+            const transliteratedDev = transliterateIastToDevanagari(cleanIast);
             
             const normTrans = normalizeDevanagari(transliteratedDev);
             const normDev = normalizeDevanagari(devText);
@@ -98,7 +124,7 @@ async function verifyStream(iastDir: string, devDir: string, reportLines: string
                 perfectMatches++;
             } else {
                 mismatchedVerses++;
-                reportLines.push(`[MISMATCH] Chapter ${chapStr}, Verse ${verseNum} (Diff: ${dist} chars, ${diffPercent.toFixed(1)}%)`);
+                reportLines.push(`[MISMATCH] Chapter/Section ${chapStr}, Verse ${verseNum} (Diff: ${dist} chars, ${diffPercent.toFixed(1)}%)`);
                 reportLines.push(`  IAST        : ${iastText.replace(/\n/g, ' ')}`);
                 reportLines.push(`  Translit(N) : ${normTrans}`);
                 reportLines.push(`  Source(N)   : ${normDev}`);
