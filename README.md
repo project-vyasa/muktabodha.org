@@ -2,6 +2,8 @@
 
 This repository contains a data pipeline to parse, clean, and package scriptural source data into the Vyasa (`.vyview`) format for Project Vyasa.
 
+> **Live Catalog URL**: [https://project-vyasa.github.io/muktabodha.org/catalog.json](https://project-vyasa.github.io/muktabodha.org/catalog.json)
+
 ## 🏛️ Credit, Attribution, and License
 
 All source data processed and packaged by this repository is sourced exclusively from the **Muktabodha Indological Research Institute** ([muktabodha.org](https://muktabodha.org/)). 
