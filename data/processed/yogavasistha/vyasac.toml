@@ -1,0 +1,32 @@
+[workspace]
+name = "yogavasistha"
+title = "Yogavasistha"
+description = "The Yogavasistha, parsed from muktabodha.org"
+path_schema = ["book", "chapter"]
+publisher = "../../../"
+
+[urn]
+corpus = "yv"
+hierarchy = ["book", "chapter", "verse"]
+
+[catalog]
+path = "../../../dist/catalog.json"
+
+[build.mula]
+target = "view"
+output_dir = "build"
+
+[[streams]]
+id = "primary"
+name = "Mula (IAST)"
+path = "content/mula_iast"
+
+[[streams]]
+id = "mula_devanagari"
+name = "Mula (Devanagari)"
+path = "content/mula_devanagari"
+
+[presentation.labels]
+"chapter.0" = "Prologue"
+"chapter.-1" = "Epilogue"
+"book.0" = "Preface"

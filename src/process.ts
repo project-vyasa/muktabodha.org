@@ -19,7 +19,15 @@ function cleanVerseText(text: string): string {
     // 2. Normalize inline double dandas to single dandas to avoid empty segments
     cleaned = cleaned.replace(/\|\|/g, '|');
 
-    // 3. Replace square brackets with the `note[...] block to represent interpolations
+    // 3. Remove hyphens ##- (often at line breaks) and stray ## markers
+    // If ##- is followed by a space or newline, it might have been a hyphenation, so we strip the marker and surrounding whitespace to join the word.
+    cleaned = cleaned.replace(/##-\s*/g, '');
+    cleaned = cleaned.replace(/##/g, '');
+
+    // 4. Escape stray backticks by replacing with single quotes to prevent vyasa parser errors
+    cleaned = cleaned.replace(/`/g, "'");
+
+    // 5. Replace square brackets with the `note[...] block to represent interpolations
     cleaned = cleaned.replace(/\[/g, '`note[');
     
     return cleaned.trim();
@@ -92,6 +100,8 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
       
       if (isProlog) {
           contentToWrite = `\`set { scope="paratext" }\n\n` + contentToWrite;
+          const contextPath = join(mulaStreamDir, "context.vy");
+          await writeFile(contextPath, "`set { chapter = \"0\" }\n", "utf8");
       }
       
       await writeFile(mulaPath, contentToWrite, "utf8");
@@ -110,6 +120,8 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
       
       if (isProlog) {
           contentToWrite = `\`set { scope="paratext" }\n\n` + contentToWrite;
+          const contextPath = join(commStreamDir, "context.vy");
+          await writeFile(contextPath, "`set { chapter = \"0\" }\n", "utf8");
       }
       
       await writeFile(commPath, contentToWrite, "utf8");
