@@ -1,0 +1,5343 @@
+{
+  "environment": {
+    "settings": {},
+    "context": {
+      "publisher": "../../../",
+      "title": "Yogavasistha",
+      "name": "yogavasistha",
+      "book": "mula_devanagari",
+      "description": "The Yogavasistha, parsed from muktabodha.org",
+      "chapter": "6",
+      "path_schema": "[\"book\", \"chapter\"]",
+      "urn": "urn:vyasa:yv:mula_devanagari:6:77",
+      "urn.hierarchy": "book,chapter,verse"
+    },
+    "aliases": {
+      "m": {
+        "target": "marker",
+        "attributes": {}
+      },
+      "e2": {
+        "target": "emphasis",
+        "attributes": {
+          "level": "2"
+        }
+      },
+      "h2": {
+        "target": "heading",
+        "attributes": {
+          "level": "2"
+        }
+      },
+      "h3": {
+        "target": "heading",
+        "attributes": {
+          "level": "3"
+        }
+      },
+      "v": {
+        "target": "verse",
+        "attributes": {}
+      },
+      "h1": {
+        "target": "heading",
+        "attributes": {
+          "level": "1"
+        }
+      },
+      "e1": {
+        "target": "emphasis",
+        "attributes": {
+          "level": "1"
+        }
+      },
+      "br": {
+        "target": "break",
+        "attributes": {
+          "type": "line"
+        }
+      }
+    },
+    "patterns": {},
+    "command_definitions": {
+      "dhritarashtra": {
+        "name": "dhritarashtra",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "arjuna": {
+        "name": "arjuna",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "h2": {
+        "name": "h2",
+        "allowed_args": [
+          "class",
+          "id"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "layout": {
+        "name": "layout",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "krishna": {
+        "name": "krishna",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "devanagari": {
+        "name": "devanagari",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "e1": {
+        "name": "e1",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "p": {
+        "name": "p",
+        "allowed_args": [
+          "class",
+          "id",
+          "style"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "group": {
+        "name": "group",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "work": {
+        "name": "work",
+        "allowed_args": [
+          "id",
+          "title"
+        ],
+        "category": "flow",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "h3": {
+        "name": "h3",
+        "allowed_args": [
+          "class",
+          "id"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "quote": {
+        "name": "quote",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "break": {
+        "name": "break",
+        "allowed_args": [
+          "type"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "div": {
+        "name": "div",
+        "allowed_args": [
+          "class",
+          "id",
+          "style"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "chapter": {
+        "name": "chapter",
+        "allowed_args": [
+          "id",
+          "title"
+        ],
+        "category": "flow",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "comment": {
+        "name": "comment",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "h1": {
+        "name": "h1",
+        "allowed_args": [
+          "class",
+          "id"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "footnote": {
+        "name": "footnote",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "ref": {
+        "name": "ref",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "b": {
+        "name": "b",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "emphasis": {
+        "name": "emphasis",
+        "allowed_args": [
+          "level"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "item": {
+        "name": "item",
+        "allowed_args": [],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "index": {
+        "name": "index",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "strong": {
+        "name": "strong",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "verse": {
+        "name": "verse",
+        "allowed_args": [
+          "id"
+        ],
+        "category": "structure",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": true,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "ul": {
+        "name": "ul",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "li": {
+        "name": "li",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "ol": {
+        "name": "ol",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "blockquote": {
+        "name": "blockquote",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "mula": {
+        "name": "mula",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "sanjaya": {
+        "name": "sanjaya",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "stream": {
+        "name": "stream",
+        "allowed_args": [
+          "ref"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "uvaca": {
+        "name": "uvaca",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "set": {
+        "name": "set",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": true
+      },
+      "marker": {
+        "name": "marker",
+        "allowed_args": [
+          "id"
+        ],
+        "category": "structure",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": true,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "each": {
+        "name": "each",
+        "allowed_args": [
+          "source"
+        ],
+        "category": "control",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "filter": {
+        "name": "filter",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "alias-def": {
+        "name": "alias-def",
+        "allowed_args": [
+          "name",
+          "target"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "a": {
+        "name": "a",
+        "allowed_args": [
+          "href",
+          "class",
+          "id",
+          "target"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "title": {
+        "name": "title",
+        "allowed_args": [
+          "type"
+        ],
+        "category": "structure",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "span": {
+        "name": "span",
+        "allowed_args": [
+          "class",
+          "id",
+          "style"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "note": {
+        "name": "note",
+        "allowed_args": [],
+        "category": "content",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "iast": {
+        "name": "iast",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "heading": {
+        "name": "heading",
+        "allowed_args": [
+          "level"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "template": {
+        "name": "template",
+        "allowed_args": [
+          "target",
+          "name",
+          "namespace"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": true
+      },
+      "refer": {
+        "name": "refer",
+        "allowed_args": [
+          "urn"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "interlinear-streams": {
+        "name": "interlinear-streams",
+        "allowed_args": [
+          "id",
+          "pattern"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "para": {
+        "name": "para",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "em": {
+        "name": "em",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "list": {
+        "name": "list",
+        "allowed_args": [
+          "type"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "command-def": {
+        "name": "command-def",
+        "allowed_args": [
+          "name",
+          "args",
+          "category",
+          "desc",
+          "whitespace",
+          "urn",
+          "propagate_state",
+          "flexible_args"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": true
+      },
+      "canto": {
+        "name": "canto",
+        "allowed_args": [
+          "id",
+          "title"
+        ],
+        "category": "flow",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "i": {
+        "name": "i",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "v": {
+        "name": "v",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "e2": {
+        "name": "e2",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "entity": {
+        "name": "entity",
+        "allowed_args": [
+          "type",
+          "speaker",
+          "urn",
+          "action"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      }
+    },
+    "templates": {
+      "item": {
+        "html": {
+          "type": "Template",
+          "target": "item",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 5063,
+                "line": 113,
+                "column": 47
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "li",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 5068,
+                    "line": 113,
+                    "column": 52
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5064,
+                "line": 113,
+                "column": 48
+              }
+            }
+          ]
+        }
+      },
+      "emphasis": {
+        "html": {
+          "type": "Template",
+          "target": "emphasis",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "op": "eq",
+                "lhs": "$.level",
+                "rhs": "1"
+              },
+              "children": [
+                {
+                  "type": "Command",
+                  "cmd": "strong",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 5181,
+                        "line": 116,
+                        "column": 52
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 5173,
+                    "line": 116,
+                    "column": 44
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5134,
+                "line": 116,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "1",
+                "lhs": "$.level",
+                "op": "neq"
+              },
+              "children": [
+                {
+                  "type": "Command",
+                  "cmd": "em",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 5238,
+                        "line": 117,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 5234,
+                    "line": 117,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5194,
+                "line": 117,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "list": {
+        "html": {
+          "type": "Template",
+          "target": "list",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "ordered",
+                "lhs": "$.type",
+                "op": "eq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4935,
+                    "line": 109,
+                    "column": 49
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "ol",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4940,
+                        "line": 109,
+                        "column": 54
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4936,
+                    "line": 109,
+                    "column": 50
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4891,
+                "line": 109,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "ordered",
+                "lhs": "$.type",
+                "op": "neq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4999,
+                    "line": 110,
+                    "column": 50
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "ul",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 5004,
+                        "line": 110,
+                        "column": 55
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 5000,
+                    "line": 110,
+                    "column": 51
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4954,
+                "line": 110,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "heading": {
+        "html": {
+          "type": "Template",
+          "target": "heading",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "lhs": "$.level",
+                "op": "eq",
+                "rhs": "1"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4473,
+                    "line": 95,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h1",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4478,
+                        "line": 95,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4474,
+                    "line": 95,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4434,
+                "line": 95,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "2",
+                "lhs": "$.level",
+                "op": "eq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4531,
+                    "line": 96,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h2",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4536,
+                        "line": 96,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4532,
+                    "line": 96,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4492,
+                "line": 96,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "3",
+                "lhs": "$.level",
+                "op": "eq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4589,
+                    "line": 97,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h3",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4594,
+                        "line": 97,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4590,
+                    "line": 97,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4550,
+                "line": 97,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "lhs": "$.level",
+                "op": "gt",
+                "rhs": "3"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4647,
+                    "line": 98,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h4",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4652,
+                        "line": 98,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4648,
+                    "line": 98,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4608,
+                "line": 98,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "v": {
+        "html": {
+          "type": "Template",
+          "target": "v",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "verse",
+                "style": "white-space: pre-line; margin-bottom: 1.5rem;"
+              },
+              "children": [
+                {
+                  "type": "Command",
+                  "cmd": "strong",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {
+                    "style": "display: block; color: #64748b; font-size: 0.9em; margin-bottom: 0.25rem;"
+                  },
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "Verse $.argument",
+                      "location": {
+                        "offset": 440,
+                        "line": 17,
+                        "column": 98
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 345,
+                    "line": 17,
+                    "column": 3
+                  }
+                },
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 457,
+                    "line": 17,
+                    "column": 115
+                  }
+                }
+              ],
+              "location": {
+                "offset": 264,
+                "line": 16,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "iast": {
+        "html": {
+          "type": "Template",
+          "target": "iast",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "iast",
+                "style": "white-space: pre-line;"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 163,
+                    "line": 8,
+                    "column": 55
+                  }
+                }
+              ],
+              "location": {
+                "offset": 109,
+                "line": 8,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "ref": {
+        "html": {
+          "type": "Template",
+          "target": "ref",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 500,
+                "line": 23,
+                "column": 7
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "a",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "href": "$.argument"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 527,
+                    "line": 23,
+                    "column": 34
+                  }
+                }
+              ],
+              "location": {
+                "offset": 501,
+                "line": 23,
+                "column": 8
+              }
+            }
+          ]
+        }
+      },
+      "arjuna": {
+        "html": {
+          "type": "Template",
+          "target": "arjuna",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 816,
+                "line": 30,
+                "column": 10
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "data-entity": "arjuna",
+                "class": "vyasa-debug-marker"
+              },
+              "children": [],
+              "location": {
+                "offset": 817,
+                "line": 30,
+                "column": 11
+              }
+            }
+          ]
+        }
+      },
+      "krishna": {
+        "html": {
+          "type": "Template",
+          "target": "krishna",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 892,
+                "line": 31,
+                "column": 11
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "data-entity": "krishna",
+                "class": "vyasa-debug-marker"
+              },
+              "children": [],
+              "location": {
+                "offset": 893,
+                "line": 31,
+                "column": 12
+              }
+            }
+          ]
+        }
+      },
+      "sanjaya": {
+        "html": {
+          "type": "Template",
+          "target": "sanjaya",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 740,
+                "line": 29,
+                "column": 11
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "vyasa-debug-marker",
+                "data-entity": "sanjaya"
+              },
+              "children": [],
+              "location": {
+                "offset": 741,
+                "line": 29,
+                "column": 12
+              }
+            }
+          ]
+        }
+      },
+      "quote": {
+        "html": {
+          "type": "Template",
+          "target": "quote",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 5372,
+                "line": 123,
+                "column": 48
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "blockquote",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 5385,
+                    "line": 123,
+                    "column": 61
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5373,
+                "line": 123,
+                "column": 49
+              }
+            }
+          ]
+        }
+      },
+      "title": {
+        "html": {
+          "type": "Template",
+          "target": "title",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "h1",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "title"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 4741,
+                    "line": 102,
+                    "column": 28
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4718,
+                "line": 102,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "para": {
+        "html": {
+          "type": "Template",
+          "target": "para",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 4825,
+                "line": 106,
+                "column": 47
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "p",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 4829,
+                    "line": 106,
+                    "column": 51
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4826,
+                "line": 106,
+                "column": 48
+              }
+            }
+          ]
+        }
+      },
+      "e1": {
+        "html": {
+          "type": "Template",
+          "target": "e1",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 542,
+                "line": 24,
+                "column": 6
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "strong",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 552,
+                    "line": 24,
+                    "column": 16
+                  }
+                }
+              ],
+              "location": {
+                "offset": 543,
+                "line": 24,
+                "column": 7
+              }
+            }
+          ]
+        }
+      },
+      "devanagari": {
+        "html": {
+          "type": "Template",
+          "target": "devanagari",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "style": "white-space: pre-line;",
+                "class": "devanagari"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 248,
+                    "line": 12,
+                    "column": 61
+                  }
+                }
+              ],
+              "location": {
+                "offset": 188,
+                "line": 12,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "e2": {
+        "html": {
+          "type": "Template",
+          "target": "e2",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 567,
+                "line": 25,
+                "column": 6
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "em",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 573,
+                    "line": 25,
+                    "column": 12
+                  }
+                }
+              ],
+              "location": {
+                "offset": 568,
+                "line": 25,
+                "column": 7
+              }
+            }
+          ]
+        }
+      },
+      "dhritarashtra": {
+        "html": {
+          "type": "Template",
+          "target": "dhritarashtra",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 657,
+                "line": 28,
+                "column": 17
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "vyasa-debug-marker",
+                "data-entity": "dhritarashtra"
+              },
+              "children": [],
+              "location": {
+                "offset": 658,
+                "line": 28,
+                "column": 18
+              }
+            }
+          ]
+        }
+      },
+      "mula": {
+        "html": {
+          "type": "Template",
+          "target": "mula",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "mula",
+                "style": "white-space: pre-line;"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 90,
+                    "line": 4,
+                    "column": 55
+                  }
+                }
+              ],
+              "location": {
+                "offset": 36,
+                "line": 4,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "uvaca": {
+        "html": {
+          "type": "Template",
+          "target": "uvaca",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 967,
+                "line": 32,
+                "column": 9
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "vyasa-debug-marker",
+                "data-action": "uvaca"
+              },
+              "children": [],
+              "location": {
+                "offset": 968,
+                "line": 32,
+                "column": 10
+              }
+            }
+          ]
+        }
+      },
+      "break": {
+        "html": {
+          "type": "Template",
+          "target": "break",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 5297,
+                "line": 120,
+                "column": 48
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "br",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [],
+              "location": {
+                "offset": 5298,
+                "line": 120,
+                "column": 49
+              }
+            }
+          ]
+        }
+      }
+    },
+    "view_imports": {},
+    "view_body": null,
+    "break_after": null
+  },
+  "body": [
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "1",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:1"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "पञ्चचत्वारिंशदधिकशततमः सर्गः १४५\nमुनिरुवाच ",
+          "location": {
+            "offset": 6,
+            "line": 1,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 128,
+            "line": 3,
+            "column": 11
+          }
+        },
+        {
+          "type": "Text",
+          "value": "बहिष्ठैर्बाह्यमेवान्तरन्तस्थैःस्वप्नमिन्द्रियैः ",
+          "location": {
+            "offset": 129,
+            "line": 3,
+            "column": 12
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 272,
+            "line": 4,
+            "column": 49
+          }
+        },
+        {
+          "type": "Text",
+          "value": "जीवो वेत्ति द्वयस्थातितीव्रसंवेगिभिर्द्वयम्",
+          "location": {
+            "offset": 273,
+            "line": 4,
+            "column": 50
+          }
+        }
+      ],
+      "location": {
+        "offset": 0,
+        "line": 1,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "2",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:2"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "यदेन्द्रियाणि तिष्ठन्ति बाह्यतश्च समाकुलम् ",
+          "location": {
+            "offset": 409,
+            "line": 8,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 531,
+            "line": 9,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तदा म्लानानुभवनः संकल्पार्थोऽनुभूयते",
+          "location": {
+            "offset": 532,
+            "line": 9,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 403,
+        "line": 8,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "3",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:3"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "यदा त्वन्तर्मुखान्येव सन्त्यक्षाणि तदा जगत् ",
+          "location": {
+            "offset": 647,
+            "line": 13,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 770,
+            "line": 14,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "अणुमात्रं स्ववपुषि जीवस्तेनातिवेत्ति तत्",
+          "location": {
+            "offset": 771,
+            "line": 14,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 641,
+        "line": 13,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "4",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:4"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "जगत्सप्रतिघं नास्ति किंचिदेव कदाचन ",
+          "location": {
+            "offset": 896,
+            "line": 18,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 994,
+            "line": 19,
+            "column": 36
+          }
+        },
+        {
+          "type": "Text",
+          "value": "जीवेक्षणानामक्षाणां दृष्टिरप्रतिघा जगत्",
+          "location": {
+            "offset": 995,
+            "line": 19,
+            "column": 37
+          }
+        }
+      ],
+      "location": {
+        "offset": 890,
+        "line": 18,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "5",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:5"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "जीवनेत्राणीन्द्रियाणि यदा बाह्यमयान्यलम् ",
+          "location": {
+            "offset": 1119,
+            "line": 23,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1237,
+            "line": 24,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तदा बाह्यात्मकं वेत्ति चिति जीवो जगद्वपुः",
+          "location": {
+            "offset": 1238,
+            "line": 24,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 1113,
+        "line": 23,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "6",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:6"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "श्रोतं त्वगीक्षणं घ्राणं जिह्वा चेतीहितात्मकः ",
+          "location": {
+            "offset": 1362,
+            "line": 28,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1491,
+            "line": 29,
+            "column": 47
+          }
+        },
+        {
+          "type": "Text",
+          "value": "संघातः प्रोच्यते जीवश्चिद्रूपोऽनिलमूर्तिमान्",
+          "location": {
+            "offset": 1492,
+            "line": 29,
+            "column": 48
+          }
+        }
+      ],
+      "location": {
+        "offset": 1356,
+        "line": 28,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "7",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:7"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "सर्वत्र सर्वदा जीवः सर्वेन्द्रियमयः स्थितः ",
+          "location": {
+            "offset": 1631,
+            "line": 33,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1751,
+            "line": 34,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "चिच्चिद्व्योमाव्ययस्तेन सर्वं सर्वत्र पश्यति",
+          "location": {
+            "offset": 1752,
+            "line": 34,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 1625,
+        "line": 33,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "8",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:8"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "श्लेष्मात्मना रसेनान्तर्जीव आपूर्यते यदा ",
+          "location": {
+            "offset": 1889,
+            "line": 38,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2005,
+            "line": 39,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तेऽक्षाणुकेऽणुरूपात्मा तदा तत्रैव विन्दति",
+          "location": {
+            "offset": 2006,
+            "line": 39,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 1883,
+        "line": 38,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "9",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:9"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "क्षीरार्णव इवोड्डीनो नभश्चन्द्रोदयान्वितम् ",
+          "location": {
+            "offset": 2134,
+            "line": 43,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2258,
+            "line": 44,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "सरांसि फुल्लपद्मानि कह्लारवलितानि च",
+          "location": {
+            "offset": 2259,
+            "line": 44,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 2128,
+        "line": 43,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "10",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:10"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "पुष्पाभ्रप्रतिधानानि परिगीतानि षट्पदैः ",
+          "location": {
+            "offset": 2370,
+            "line": 48,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2482,
+            "line": 49,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "वसन्तान्तःपुराण्यन्तरुद्यानान्युदितानि खे",
+          "location": {
+            "offset": 2483,
+            "line": 49,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 2363,
+        "line": 48,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "11",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:11"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "उत्सवान्मङ्गलाकीर्णांल्लीलालोलाङ्गनागणान् ",
+          "location": {
+            "offset": 2616,
+            "line": 53,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2741,
+            "line": 54,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "भक्ष्यभोज्यान्नपानश्रीपरिपूर्णगृहाजिरान्",
+          "location": {
+            "offset": 2742,
+            "line": 54,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 2609,
+        "line": 53,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "12",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:12"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "सपुष्पाः फेनहसनास्तरलातरलेक्षणाः ",
+          "location": {
+            "offset": 2874,
+            "line": 58,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2970,
+            "line": 59,
+            "column": 34
+          }
+        },
+        {
+          "type": "Text",
+          "value": "विलासेनाम्बुधिं यान्ति सरितो मत्तयौवनाः",
+          "location": {
+            "offset": 2971,
+            "line": 59,
+            "column": 35
+          }
+        }
+      ],
+      "location": {
+        "offset": 2867,
+        "line": 58,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "13",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:13"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "हिमवच्छुभ्रशृङ्गाणि सौधानि शिशिराण्यलम् ",
+          "location": {
+            "offset": 3094,
+            "line": 63,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3209,
+            "line": 64,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "सुधावधौतभित्तीनि कृतानीन्दुतलैरिव",
+          "location": {
+            "offset": 3210,
+            "line": 64,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 3087,
+        "line": 63,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "14",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:14"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "शिशिरासारहेमन्तप्रावृण्मेघवृतानि च ",
+          "location": {
+            "offset": 3319,
+            "line": 68,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3421,
+            "line": 69,
+            "column": 36
+          }
+        },
+        {
+          "type": "Text",
+          "value": "स्थलानि नीलनलिनीलताशाद्वलवन्ति च",
+          "location": {
+            "offset": 3422,
+            "line": 69,
+            "column": 37
+          }
+        }
+      ],
+      "location": {
+        "offset": 3312,
+        "line": 68,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "15",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:15"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "पुष्पप्रकरसंछन्ना विश्रान्तहरिणाध्वगाः ",
+          "location": {
+            "offset": 3526,
+            "line": 73,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3640,
+            "line": 74,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "स्निग्धपत्रतरुच्छायाः पुरोंपवनभूमिकाः",
+          "location": {
+            "offset": 3641,
+            "line": 74,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 3519,
+        "line": 73,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "16",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:16"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "कदम्बकुन्दमन्दारमकरन्देन्दुकान्तिभिः ",
+          "location": {
+            "offset": 3762,
+            "line": 78,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3872,
+            "line": 79,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "भासमानासनस्थानसंस्थानाः कुसुमस्थलीः",
+          "location": {
+            "offset": 3873,
+            "line": 79,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 3755,
+        "line": 78,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "17",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:17"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "नलिनीजालिनीर्नीलाः पुष्पकस्थलधारिणीः ",
+          "location": {
+            "offset": 3988,
+            "line": 83,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4096,
+            "line": 84,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "वनावलीर्विलीनाभ्रनिर्मलाकाशकोमलाः",
+          "location": {
+            "offset": 4097,
+            "line": 84,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 3981,
+        "line": 83,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "18",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:18"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "कदलीकन्दलीकुन्दकदम्बकृतशेखराः ",
+          "location": {
+            "offset": 4208,
+            "line": 88,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4297,
+            "line": 89,
+            "column": 31
+          }
+        },
+        {
+          "type": "Text",
+          "value": "गिरिमालाश्चलच्चारुलीलापल्लवपेलवाः",
+          "location": {
+            "offset": 4298,
+            "line": 89,
+            "column": 32
+          }
+        }
+      ],
+      "location": {
+        "offset": 4201,
+        "line": 88,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "19",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:19"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "हेलावलितधम्मिल्लमुक्तमालतिकालताः ",
+          "location": {
+            "offset": 4409,
+            "line": 93,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4507,
+            "line": 94,
+            "column": 34
+          }
+        },
+        {
+          "type": "Text",
+          "value": "इव बालाङ्गना नृत्यं तन्वानास्तनुगात्रिकाः",
+          "location": {
+            "offset": 4508,
+            "line": 94,
+            "column": 35
+          }
+        }
+      ],
+      "location": {
+        "offset": 4402,
+        "line": 93,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "20",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:20"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "उत्फुल्लश्वेतनलिनीनिभा नरपतेः सभाः ",
+          "location": {
+            "offset": 4637,
+            "line": 98,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4737,
+            "line": 99,
+            "column": 36
+          }
+        },
+        {
+          "type": "Text",
+          "value": "चारुचामरभृङ्गारवितानकशतावृताः",
+          "location": {
+            "offset": 4738,
+            "line": 99,
+            "column": 37
+          }
+        }
+      ],
+      "location": {
+        "offset": 4630,
+        "line": 98,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "21",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:21"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "वल्लीवलयविन्यासविलासवलिताङ्गिकाः ",
+          "location": {
+            "offset": 4837,
+            "line": 103,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4935,
+            "line": 104,
+            "column": 34
+          }
+        },
+        {
+          "type": "Text",
+          "value": "वनमाला विलोलाम्बुप्रणालीकाकलीकलाः",
+          "location": {
+            "offset": 4936,
+            "line": 104,
+            "column": 35
+          }
+        }
+      ],
+      "location": {
+        "offset": 4830,
+        "line": 103,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "22",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:22"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "धराभरकरालाङ्गधाराधरधराधराः ",
+          "location": {
+            "offset": 5045,
+            "line": 108,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5125,
+            "line": 109,
+            "column": 28
+          }
+        },
+        {
+          "type": "Text",
+          "value": "दिशः सीकरनीहारहारोदरधरा दश",
+          "location": {
+            "offset": 5126,
+            "line": 109,
+            "column": 29
+          }
+        }
+      ],
+      "location": {
+        "offset": 5038,
+        "line": 108,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "23",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:23"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "पित्तात्मना रसेनान्तर्जीव आपूर्यते यदा ",
+          "location": {
+            "offset": 5212,
+            "line": 113,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5322,
+            "line": 114,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "ओजोन्तरणुमात्रात्मा तदा तत्रैव विन्दति",
+          "location": {
+            "offset": 5323,
+            "line": 114,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 5205,
+        "line": 113,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "24",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:24"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "पवनस्पन्दसंशुष्ककिंशुकद्रुमशोभनाः ",
+          "location": {
+            "offset": 5443,
+            "line": 118,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5544,
+            "line": 119,
+            "column": 35
+          }
+        },
+        {
+          "type": "Text",
+          "value": "ज्वालालीरुज्ज्वलाम्भोजदलपल्लवपेलवाः",
+          "location": {
+            "offset": 5545,
+            "line": 119,
+            "column": 36
+          }
+        }
+      ],
+      "location": {
+        "offset": 5436,
+        "line": 118,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "25",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:25"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "संतप्तसिकतासेकसनीहारसरिच्छिराः ",
+          "location": {
+            "offset": 5662,
+            "line": 123,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5754,
+            "line": 124,
+            "column": 32
+          }
+        },
+        {
+          "type": "Text",
+          "value": "दावानलशिखाश्यामधूमश्यामलदिङ्मुखाः",
+          "location": {
+            "offset": 5755,
+            "line": 124,
+            "column": 33
+          }
+        }
+      ],
+      "location": {
+        "offset": 5655,
+        "line": 123,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "26",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:26"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "कृशानुकर्कशानर्कांश्चक्रधाराशितत्विषः ",
+          "location": {
+            "offset": 5866,
+            "line": 128,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5979,
+            "line": 129,
+            "column": 39
+          }
+        },
+        {
+          "type": "Text",
+          "value": "दावदाहविषावेशविपरीतरसाकरान्",
+          "location": {
+            "offset": 5980,
+            "line": 129,
+            "column": 40
+          }
+        }
+      ],
+      "location": {
+        "offset": 5859,
+        "line": 128,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "27",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:27"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "स्वेदमुष्णीकृताब्धिं वा स्विन्नं त्रैलोक्यमण्डलम् ",
+          "location": {
+            "offset": 6073,
+            "line": 133,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6216,
+            "line": 134,
+            "column": 51
+          }
+        },
+        {
+          "type": "Text",
+          "value": "क्षरत्क्षाराण्यरण्यानि प्रतर्दगहनान्यपि",
+          "location": {
+            "offset": 6217,
+            "line": 134,
+            "column": 52
+          }
+        }
+      ],
+      "location": {
+        "offset": 6066,
+        "line": 133,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "28",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:28"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "प्रतरन्मृगतृष्णाम्बुसरत्सारसरूपि च ",
+          "location": {
+            "offset": 6344,
+            "line": 138,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6446,
+            "line": 139,
+            "column": 36
+          }
+        },
+        {
+          "type": "Text",
+          "value": "स्थलान्यदृष्टपूर्वाणि भूतपूर्वतरूणि च",
+          "location": {
+            "offset": 6447,
+            "line": 139,
+            "column": 37
+          }
+        }
+      ],
+      "location": {
+        "offset": 6337,
+        "line": 138,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "29",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:29"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "अध्वगं संभ्रमवशात्तप्तधूलिविधूसरम् ",
+          "location": {
+            "offset": 6566,
+            "line": 143,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6668,
+            "line": 144,
+            "column": 36
+          }
+        },
+        {
+          "type": "Text",
+          "value": "दूरादमृतवद्दृष्टं स्निग्धच्छायाध्वपादपम्",
+          "location": {
+            "offset": 6669,
+            "line": 144,
+            "column": 37
+          }
+        }
+      ],
+      "location": {
+        "offset": 6559,
+        "line": 143,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "30",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:30"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "ज्वरज्वालितमाकारं भुवनं तप्तमग्निवत् ",
+          "location": {
+            "offset": 6799,
+            "line": 148,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6905,
+            "line": 149,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "पांसूपहतदेशानि दिङ्मुखानि च खानि च",
+          "location": {
+            "offset": 6906,
+            "line": 149,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 6792,
+        "line": 148,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "31",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:31"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "ग्रहग्रामार्णवाद्र्यब्धिवनव्योमाग्निका दिशः ",
+          "location": {
+            "offset": 7012,
+            "line": 153,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 7141,
+            "line": 154,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तुहिनाहारहानन्तासंख्याम्बुदघटोद्भटान्",
+          "location": {
+            "offset": 7142,
+            "line": 154,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 7005,
+        "line": 153,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "32",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:32"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "शरद्ग्रीष्मवसन्तांश्च तापानातपदायिनः ",
+          "location": {
+            "offset": 7265,
+            "line": 158,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 7373,
+            "line": 159,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तृणपत्रलतौघाभ्रराश्यूष्मपिहितावनीः",
+          "location": {
+            "offset": 7374,
+            "line": 159,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 7258,
+        "line": 158,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "33",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:33"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "सौवर्णमम्बरतलं भूतलं दिक्तटानि च ",
+          "location": {
+            "offset": 7488,
+            "line": 163,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 7580,
+            "line": 164,
+            "column": 34
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तप्तान्यदभ्रसरसीहिमशैलस्थलानि च",
+          "location": {
+            "offset": 7581,
+            "line": 164,
+            "column": 35
+          }
+        }
+      ],
+      "location": {
+        "offset": 7481,
+        "line": 163,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "34",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:34"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "रसानुरिक्ते वातेन जीव आपूर्यते यदा ",
+          "location": {
+            "offset": 7684,
+            "line": 168,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 7780,
+            "line": 169,
+            "column": 36
+          }
+        },
+        {
+          "type": "Text",
+          "value": "ओजोन्तरणुमात्रात्मा तदा तत्रैव विन्दते",
+          "location": {
+            "offset": 7781,
+            "line": 169,
+            "column": 37
+          }
+        }
+      ],
+      "location": {
+        "offset": 7677,
+        "line": 168,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "35",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:35"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "वातविक्षुब्धसम्वित्त्वादपूर्वं वसुधातलम् ",
+          "location": {
+            "offset": 7901,
+            "line": 173,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 8021,
+            "line": 174,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "अपूर्वा नगरग्रामशैलाब्धिवनमण्डलीः",
+          "location": {
+            "offset": 8022,
+            "line": 174,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 7894,
+        "line": 173,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "36",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:36"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "उड्डीयमानमात्मानं शिलाः शैलस्थलानिव ",
+          "location": {
+            "offset": 8131,
+            "line": 178,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 8234,
+            "line": 179,
+            "column": 37
+          }
+        },
+        {
+          "type": "Text",
+          "value": "घनघुंघुमसारावानचक्रभ्रमणादि च",
+          "location": {
+            "offset": 8235,
+            "line": 179,
+            "column": 38
+          }
+        }
+      ],
+      "location": {
+        "offset": 8124,
+        "line": 178,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "37",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:37"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "हयोष्ट्रगरुडाम्भोदहंसयानावरोहणम् ",
+          "location": {
+            "offset": 8332,
+            "line": 183,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 8430,
+            "line": 184,
+            "column": 34
+          }
+        },
+        {
+          "type": "Text",
+          "value": "यक्षविद्याधरादीनां गत्यागमनसंचरम्",
+          "location": {
+            "offset": 8431,
+            "line": 184,
+            "column": 35
+          }
+        }
+      ],
+      "location": {
+        "offset": 8325,
+        "line": 183,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "38",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:38"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "साद्रिद्यूर्वीनदीशानां वनभूग्रामपूर्दिशाम् ",
+          "location": {
+            "offset": 8540,
+            "line": 188,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 8666,
+            "line": 189,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "कम्पं भयोन्मुखाङ्गानां बुद्बुदानामिवार्णवे",
+          "location": {
+            "offset": 8667,
+            "line": 189,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 8533,
+        "line": 188,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "39",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:39"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "अन्धकूपे निपतितं विपुले संकटेऽथवा ",
+          "location": {
+            "offset": 8801,
+            "line": 193,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 8896,
+            "line": 194,
+            "column": 35
+          }
+        },
+        {
+          "type": "Text",
+          "value": "अथवा रूढमात्मानं खमाभं पादपं गिरिम्",
+          "location": {
+            "offset": 8897,
+            "line": 194,
+            "column": 36
+          }
+        }
+      ],
+      "location": {
+        "offset": 8794,
+        "line": 193,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "40",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:40"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "खं मिनोति परिच्छिनत्त्याभा संस्थानशोभा यस्य तथाविधं पादपं गिरिं च ",
+          "location": {
+            "offset": 9006,
+            "line": 198,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 9187,
+            "line": 199,
+            "column": 67
+          }
+        },
+        {
+          "type": "Text",
+          "value": "३९ ",
+          "location": {
+            "offset": 9188,
+            "line": 199,
+            "column": 68
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 9196,
+            "line": 200,
+            "column": 4
+          }
+        },
+        {
+          "type": "Text",
+          "value": "वातपित्तश्लेष्मयुक्तो जीव आपूर्यते यदा ",
+          "location": {
+            "offset": 9197,
+            "line": 200,
+            "column": 5
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 9307,
+            "line": 201,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "भागैर्वातवशं प्राप्तैरार्तोऽसौ विन्दते तदा",
+          "location": {
+            "offset": 9308,
+            "line": 201,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 8999,
+        "line": 198,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "41",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:41"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "पतन्तीं पार्वतीं वृष्टिं सुशिलावृष्टिसंकटम् ",
+          "location": {
+            "offset": 9440,
+            "line": 205,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 9565,
+            "line": 206,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "स्फुटाट्टकटकारावभ्रमत्पादपमण्डलम्",
+          "location": {
+            "offset": 9566,
+            "line": 206,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 9433,
+        "line": 205,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "42",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:42"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "भ्रमद्भिर्वनविन्यासैः संदिग्धाम्भोधरोत्कटम् ",
+          "location": {
+            "offset": 9677,
+            "line": 210,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 9806,
+            "line": 211,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "सिंहवारणवर्षाभ्रनिरन्तरदिगन्तरम्",
+          "location": {
+            "offset": 9807,
+            "line": 211,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 9670,
+        "line": 210,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "43",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:43"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "तालीतमालहिंतालमालाज्वलनसंकुलम् ",
+          "location": {
+            "offset": 9915,
+            "line": 215,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 10007,
+            "line": 216,
+            "column": 32
+          }
+        },
+        {
+          "type": "Text",
+          "value": "गुहाघुंघुमनिर्ह्रादभांकारघनघर्घरम्",
+          "location": {
+            "offset": 10008,
+            "line": 216,
+            "column": 33
+          }
+        }
+      ],
+      "location": {
+        "offset": 9908,
+        "line": 215,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "44",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:44"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "मन्द्रमन्दरमन्थानशब्दसंदर्भसुन्दरीम् ",
+          "location": {
+            "offset": 10122,
+            "line": 220,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 10232,
+            "line": 221,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "दरीं दलनदुर्वारमिथःसंघट्टघट्टिताम्",
+          "location": {
+            "offset": 10233,
+            "line": 221,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 10115,
+        "line": 220,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "45",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:45"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "शृङ्गसंघट्टसदृशाः क्रेंकारोत्करकर्कशाः ",
+          "location": {
+            "offset": 10345,
+            "line": 225,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 10459,
+            "line": 226,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "नदीर्मुक्तालतापातसस्नग्दामनभस्तलाः",
+          "location": {
+            "offset": 10460,
+            "line": 226,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 10338,
+        "line": 225,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "46",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:46"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "शिलाशकलपूर्णार्णपूर्णाम्बरमहार्णवम् ",
+          "location": {
+            "offset": 10574,
+            "line": 230,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 10681,
+            "line": 231,
+            "column": 37
+          }
+        },
+        {
+          "type": "Text",
+          "value": "वहद्वनघनोद्घातघट्टितब्रह्ममण्डलम्",
+          "location": {
+            "offset": 10682,
+            "line": 231,
+            "column": 38
+          }
+        }
+      ],
+      "location": {
+        "offset": 10567,
+        "line": 230,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "47",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:47"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "परस्परविनिर्मृष्टदशदर्शनदन्तुरम् ",
+          "location": {
+            "offset": 10793,
+            "line": 235,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 10891,
+            "line": 236,
+            "column": 34
+          }
+        },
+        {
+          "type": "Text",
+          "value": "चटत्कटकटारावस्फुटत्कटकटङ्कितम्",
+          "location": {
+            "offset": 10892,
+            "line": 236,
+            "column": 35
+          }
+        }
+      ],
+      "location": {
+        "offset": 10786,
+        "line": 235,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "48",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:48"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "खपातपवनाधूतवनवातलतोदयम् ",
+          "location": {
+            "offset": 10994,
+            "line": 240,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 11065,
+            "line": 241,
+            "column": 25
+          }
+        },
+        {
+          "type": "Text",
+          "value": "रणदात्मदृषच्चूर्णकर्बुराम्बुजधारिणम्",
+          "location": {
+            "offset": 11066,
+            "line": 241,
+            "column": 26
+          }
+        }
+      ],
+      "location": {
+        "offset": 10987,
+        "line": 240,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "49",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:49"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "प्राग्भटोद्भटभेदोत्थैर्मन्द्रैर्मरमरारवैः ",
+          "location": {
+            "offset": 11186,
+            "line": 245,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 11311,
+            "line": 246,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "क्रूराक्रन्दैरिवाभाति विराजितजगत्त्रयम्",
+          "location": {
+            "offset": 11312,
+            "line": 246,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 11179,
+        "line": 245,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "50",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:50"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "इति तैः काष्ठपाषाणमृद्युग्वातभटैर्वृतः ",
+          "location": {
+            "offset": 11439,
+            "line": 250,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 11551,
+            "line": 251,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "परिपीडित एवास्ते यदा जीवो जडीकृतः",
+          "location": {
+            "offset": 11552,
+            "line": 251,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 11432,
+        "line": 250,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "51",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:51"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "मृदन्तःकीटकणवच्छिलान्तर्गतभेकवत् ",
+          "location": {
+            "offset": 11655,
+            "line": 255,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 11753,
+            "line": 256,
+            "column": 34
+          }
+        },
+        {
+          "type": "Text",
+          "value": "गर्भस्थापक्वशिशुवत्फलान्तर्गतबीजवत्",
+          "location": {
+            "offset": 11754,
+            "line": 256,
+            "column": 35
+          }
+        }
+      ],
+      "location": {
+        "offset": 11648,
+        "line": 255,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "52",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:52"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "बीजोदरस्थाङ्कुरवद्द्रव्यपिण्डोदराणुवत् ",
+          "location": {
+            "offset": 11871,
+            "line": 260,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 11987,
+            "line": 261,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "अश्रान्तस्तम्बकोशस्थदारुपुत्रकदेहवत्",
+          "location": {
+            "offset": 11988,
+            "line": 261,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 11864,
+        "line": 260,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "53",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:53"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "सौषिर्यासंभवात्प्राणपवनस्पन्दवर्जितः ",
+          "location": {
+            "offset": 12108,
+            "line": 265,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 12218,
+            "line": 266,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "प्रोन्नमत्पर्शुपूरेण शिलापूरेण तर्जितः",
+          "location": {
+            "offset": 12219,
+            "line": 266,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 12101,
+        "line": 265,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "54",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:54"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "सुषुप्तं तर्हि कदा केन निमित्तेनानुभवति तदाह - सौषिर्येति ",
+          "location": {
+            "offset": 12341,
+            "line": 270,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 12498,
+            "line": 271,
+            "column": 59
+          }
+        },
+        {
+          "type": "Text",
+          "value": " यदायं जीवः\nपुरीतति नाडीपञ्जरे सर्वपार्श्वास्थ्यग्रघटितहृदयास्थिग्रन्थ्युपलक्षिते प्रविष्टो\nभवति तदा अग्रे संचारार्थं सौषिर्यासंभवाद्यस्मिन्प्रदेशे\nप्राणपवनप्रयुक्तेन स्पन्देन वर्जितः सन्प्रोन्नमतां पर्शूनां पार्श्वास्थीनां\nपूरेण ग्रन्थिना शिलापूरेण बिले निरुद्ध इव तर्जितो व्यापारासमर्थः कुतो भवति तदा\nप्रागुक्तनिबिडतरौजःशब्दिततेजोन्तरेव शैलकोशः शिलाजठरं\nतदाभमज्ञानगाढत्वादन्धकूपोदरोपमं सुषुप्तमनुभवतीति द्वयोरन्वयः ",
+          "location": {
+            "offset": 12499,
+            "line": 271,
+            "column": 60
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 13680,
+            "line": 277,
+            "column": 62
+          }
+        },
+        {
+          "type": "Text",
+          "value": "५३ ",
+          "location": {
+            "offset": 13681,
+            "line": 277,
+            "column": 63
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 13689,
+            "line": 278,
+            "column": 4
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तदा निबिडतेजोन्तरेवानुभवति स्वयम् ",
+          "location": {
+            "offset": 13690,
+            "line": 278,
+            "column": 5
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 13787,
+            "line": 279,
+            "column": 35
+          }
+        },
+        {
+          "type": "Text",
+          "value": "सुषुप्तं शैलकोशाभमन्धकूपोदरोपमम्",
+          "location": {
+            "offset": 13788,
+            "line": 279,
+            "column": 36
+          }
+        }
+      ],
+      "location": {
+        "offset": 12334,
+        "line": 270,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "55",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:55"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "यदा परिणतं यत्नं पुनः सौषिर्यमागतम् ",
+          "location": {
+            "offset": 13894,
+            "line": 283,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 13993,
+            "line": 284,
+            "column": 37
+          }
+        },
+        {
+          "type": "Text",
+          "value": "पुनर्वेत्ति तदा जीवः स्वप्नं प्राणावबोधितः",
+          "location": {
+            "offset": 13994,
+            "line": 284,
+            "column": 38
+          }
+        }
+      ],
+      "location": {
+        "offset": 13887,
+        "line": 283,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "56",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:56"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "यदा तस्मिन्प्रदेशेऽन्तर्भागभागान्पतन्ति ते ",
+          "location": {
+            "offset": 14124,
+            "line": 288,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 14248,
+            "line": 289,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "देहे परिणमन्तोऽन्तस्तदेवात्यद्रिवर्षणम्",
+          "location": {
+            "offset": 14249,
+            "line": 289,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 14117,
+        "line": 288,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "57",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:57"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "बह्वेव वह्निबहुना स्वल्पेनाल्पं प्रपश्यति ",
+          "location": {
+            "offset": 14376,
+            "line": 293,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 14495,
+            "line": 294,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "वातपित्तादियोगेन बहिरन्तश्च संभ्रमम्",
+          "location": {
+            "offset": 14496,
+            "line": 294,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 14369,
+        "line": 293,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "58",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:58"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "पश्यत्येतद्यथैवान्तरेष जीवो वशीकृतः ",
+          "location": {
+            "offset": 14612,
+            "line": 298,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 14715,
+            "line": 299,
+            "column": 37
+          }
+        },
+        {
+          "type": "Text",
+          "value": "वातपित्तादिवलितो बहिर्वेत्त्येवमेति वा",
+          "location": {
+            "offset": 14716,
+            "line": 299,
+            "column": 38
+          }
+        }
+      ],
+      "location": {
+        "offset": 14605,
+        "line": 298,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "59",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:59"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "क्षुब्धैरन्तर्बहिश्चैव स्वल्पः स्वल्पं प्रपश्यति ",
+          "location": {
+            "offset": 14838,
+            "line": 303,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 14978,
+            "line": 304,
+            "column": 50
+          }
+        },
+        {
+          "type": "Text",
+          "value": "समैः सममिदं दृश्यं वातपित्तकफादिना",
+          "location": {
+            "offset": 14979,
+            "line": 304,
+            "column": 51
+          }
+        }
+      ],
+      "location": {
+        "offset": 14831,
+        "line": 303,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "60",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:60"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "बहिः पश्यत्ययं जीवः कुपितैरेभिरावृतः ",
+          "location": {
+            "offset": 15087,
+            "line": 308,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 15191,
+            "line": 309,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "स्पन्दं भूम्यद्रिनभसां ज्वलनं वानलोच्चयैः",
+          "location": {
+            "offset": 15192,
+            "line": 309,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 15080,
+        "line": 308,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "61",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:61"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "आकाशगमनं चैव चन्द्रोदयहिमाचलान् ",
+          "location": {
+            "offset": 15321,
+            "line": 313,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 15412,
+            "line": 314,
+            "column": 33
+          }
+        },
+        {
+          "type": "Text",
+          "value": "गहनं वृक्षशैलानां नभःप्लवनमर्णसाम्",
+          "location": {
+            "offset": 15413,
+            "line": 314,
+            "column": 34
+          }
+        }
+      ],
+      "location": {
+        "offset": 15314,
+        "line": 313,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "62",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:62"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "मज्जनोन्मज्जनं वाब्धौ सुरतं सुरसद्मसु ",
+          "location": {
+            "offset": 15523,
+            "line": 318,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 15630,
+            "line": 319,
+            "column": 39
+          }
+        },
+        {
+          "type": "Text",
+          "value": "शैलोपवनशुभ्राभ्रपीठविश्रमणोच्चयम्",
+          "location": {
+            "offset": 15631,
+            "line": 319,
+            "column": 40
+          }
+        }
+      ],
+      "location": {
+        "offset": 15516,
+        "line": 318,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "63",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:63"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "बृहत्क्रकचनिष्पेषं नरकानुभवभ्रमम् ",
+          "location": {
+            "offset": 15742,
+            "line": 323,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 15841,
+            "line": 324,
+            "column": 35
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तालीतमालहिंतालमालावलनमम्बरे",
+          "location": {
+            "offset": 15842,
+            "line": 324,
+            "column": 36
+          }
+        }
+      ],
+      "location": {
+        "offset": 15735,
+        "line": 323,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "64",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:64"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "चक्रवृत्तैश्च पतनं झगित्युत्पतनं दिवि ",
+          "location": {
+            "offset": 15935,
+            "line": 328,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 16042,
+            "line": 329,
+            "column": 39
+          }
+        },
+        {
+          "type": "Text",
+          "value": "शून्येऽपि जनतावृन्दं स्थलेऽप्यब्धिनिमज्जनम्",
+          "location": {
+            "offset": 16043,
+            "line": 329,
+            "column": 40
+          }
+        }
+      ],
+      "location": {
+        "offset": 15928,
+        "line": 328,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "65",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:65"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "विचित्रं विपरीतं च व्यवहारं महानिशि ",
+          "location": {
+            "offset": 16180,
+            "line": 333,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 16279,
+            "line": 334,
+            "column": 37
+          }
+        },
+        {
+          "type": "Text",
+          "value": "अह्नीव भास्करालोकं दुर्भेद्यं चाह्नि वा तमः",
+          "location": {
+            "offset": 16280,
+            "line": 334,
+            "column": 38
+          }
+        }
+      ],
+      "location": {
+        "offset": 16173,
+        "line": 333,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "66",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:66"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "साद्रिभूतलमाकाशे कुड्यबन्धे घने स्थलम् ",
+          "location": {
+            "offset": 16411,
+            "line": 338,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 16521,
+            "line": 339,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "कुड्यबन्धांश्च गगने मित्रभावं च विद्विषि",
+          "location": {
+            "offset": 16522,
+            "line": 339,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 16404,
+        "line": 338,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "67",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:67"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "स्वजने परताबुद्धिं सुजनत्वं च दुर्जने ",
+          "location": {
+            "offset": 16646,
+            "line": 343,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 16751,
+            "line": 344,
+            "column": 39
+          }
+        },
+        {
+          "type": "Text",
+          "value": "सुसमस्थलतां श्वभ्रे श्वभ्रत्वं सुसमे स्थले",
+          "location": {
+            "offset": 16752,
+            "line": 344,
+            "column": 40
+          }
+        }
+      ],
+      "location": {
+        "offset": 16639,
+        "line": 343,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "68",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:68"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "उद्गीतालापमसृणान्सुधाधौतान्सुचित्रितान् ",
+          "location": {
+            "offset": 16882,
+            "line": 348,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 17001,
+            "line": 349,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "उद्रीञ्छ्वेतमयान्वापि नवनीतमयांश्च वा",
+          "location": {
+            "offset": 17002,
+            "line": 349,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 16875,
+        "line": 348,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "69",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:69"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "कदम्बनीपजम्बीरपत्रस्तबकसद्मसु ",
+          "location": {
+            "offset": 17121,
+            "line": 353,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 17210,
+            "line": 354,
+            "column": 31
+          }
+        },
+        {
+          "type": "Text",
+          "value": "सुखविश्रमणं स्त्रीभिः नाकं पद्मेष्विवालिनः",
+          "location": {
+            "offset": 17211,
+            "line": 354,
+            "column": 32
+          }
+        }
+      ],
+      "location": {
+        "offset": 17114,
+        "line": 353,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "70",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:70"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "अन्तर्निमीलिता ह्येताः पश्यन्त्युन्मीलिता बहिः ",
+          "location": {
+            "offset": 17343,
+            "line": 358,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 17477,
+            "line": 359,
+            "column": 48
+          }
+        },
+        {
+          "type": "Text",
+          "value": "धातूनामिति वैषम्याद्भ्रान्तिमिन्द्रियवृत्तयः",
+          "location": {
+            "offset": 17478,
+            "line": 359,
+            "column": 49
+          }
+        }
+      ],
+      "location": {
+        "offset": 17336,
+        "line": 358,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "71",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:71"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "एवंविधान्यनेकानि पश्यन्त्यनुभवन्ति च ",
+          "location": {
+            "offset": 17620,
+            "line": 363,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 17726,
+            "line": 364,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "बहिरेव यथा स्वप्ने वस्तुन्यसमधातवः",
+          "location": {
+            "offset": 17727,
+            "line": 364,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 17613,
+        "line": 363,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "72",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:72"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "बहिश्चान्तश्च दृश्यन्ते विपरीतान्यनेकशः ",
+          "location": {
+            "offset": 17835,
+            "line": 368,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 17950,
+            "line": 369,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "कार्याण्यतिकरालानि जीवैरसमधातुभिः",
+          "location": {
+            "offset": 17951,
+            "line": 369,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 17828,
+        "line": 368,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "73",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:73"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "समेषु धातुष्वेषोऽन्तर्जीवोऽनुभवति स्वयम् ",
+          "location": {
+            "offset": 18060,
+            "line": 373,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 18178,
+            "line": 374,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तेजोन्तर्गत एवेमां व्यवहारस्थितिं समाम्",
+          "location": {
+            "offset": 18179,
+            "line": 374,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 18053,
+        "line": 373,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "74",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:74"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "यथास्थितां पुरग्रामपत्तनारण्यसंततिम् ",
+          "location": {
+            "offset": 18302,
+            "line": 378,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 18410,
+            "line": 379,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "सौम्यवारितरुच्छायादेशाध्वगगमागमम्",
+          "location": {
+            "offset": 18411,
+            "line": 379,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 18295,
+        "line": 378,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "75",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:75"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "सुखातपमयेन्द्वर्कताराहोरात्रमण्डितम् ",
+          "location": {
+            "offset": 18522,
+            "line": 383,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 18632,
+            "line": 384,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "एवमेतदसद्भूतं सद्भूतमिव भासते",
+          "location": {
+            "offset": 18633,
+            "line": 384,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 18515,
+        "line": 383,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "76",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:76"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "दृश्योपलम्भं चित्तत्त्वे स्पन्दनंन् पवने यथा ",
+          "location": {
+            "offset": 18728,
+            "line": 388,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 18854,
+            "line": 389,
+            "column": 46
+          }
+        },
+        {
+          "type": "Text",
+          "value": "असदेव सदाभासमभिन्नं भिन्नवत्स्थितम्",
+          "location": {
+            "offset": 18855,
+            "line": 389,
+            "column": 47
+          }
+        }
+      ],
+      "location": {
+        "offset": 18721,
+        "line": 388,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "77",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_devanagari:6:77"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "शान्तादुदेति सकलं जगदम्बरात्म शान्तं न किंचन न नाम सदित्युदेति ",
+          "location": {
+            "offset": 18968,
+            "line": 393,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 19140,
+            "line": 394,
+            "column": 64
+          }
+        },
+        {
+          "type": "Text",
+          "value": "तद्व्योमनीदृशमनन्तचितेः शरीरे भामात्रमाततमनन्तवपुर्विभाति",
+          "location": {
+            "offset": 19141,
+            "line": 394,
+            "column": 65
+          }
+        }
+      ],
+      "location": {
+        "offset": 18961,
+        "line": 393,
+        "column": 1
+      }
+    }
+  ]
+}

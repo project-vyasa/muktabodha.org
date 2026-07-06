@@ -1,0 +1,4449 @@
+{
+  "environment": {
+    "settings": {},
+    "context": {
+      "publisher": "../../../",
+      "title": "Yogavasistha",
+      "name": "yogavasistha",
+      "book": "mula_iast",
+      "description": "The Yogavasistha, parsed from muktabodha.org",
+      "chapter": "6",
+      "path_schema": "[\"book\", \"chapter\"]",
+      "urn": "urn:vyasa:yv:mula_iast:6:53",
+      "urn.hierarchy": "book,chapter,verse"
+    },
+    "aliases": {
+      "m": {
+        "target": "marker",
+        "attributes": {}
+      },
+      "e2": {
+        "target": "emphasis",
+        "attributes": {
+          "level": "2"
+        }
+      },
+      "h2": {
+        "target": "heading",
+        "attributes": {
+          "level": "2"
+        }
+      },
+      "h3": {
+        "target": "heading",
+        "attributes": {
+          "level": "3"
+        }
+      },
+      "v": {
+        "target": "verse",
+        "attributes": {}
+      },
+      "h1": {
+        "target": "heading",
+        "attributes": {
+          "level": "1"
+        }
+      },
+      "e1": {
+        "target": "emphasis",
+        "attributes": {
+          "level": "1"
+        }
+      },
+      "br": {
+        "target": "break",
+        "attributes": {
+          "type": "line"
+        }
+      }
+    },
+    "patterns": {},
+    "command_definitions": {
+      "dhritarashtra": {
+        "name": "dhritarashtra",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "arjuna": {
+        "name": "arjuna",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "h2": {
+        "name": "h2",
+        "allowed_args": [
+          "class",
+          "id"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "layout": {
+        "name": "layout",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "krishna": {
+        "name": "krishna",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "devanagari": {
+        "name": "devanagari",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "e1": {
+        "name": "e1",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "p": {
+        "name": "p",
+        "allowed_args": [
+          "class",
+          "id",
+          "style"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "group": {
+        "name": "group",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "work": {
+        "name": "work",
+        "allowed_args": [
+          "id",
+          "title"
+        ],
+        "category": "flow",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "h3": {
+        "name": "h3",
+        "allowed_args": [
+          "class",
+          "id"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "quote": {
+        "name": "quote",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "break": {
+        "name": "break",
+        "allowed_args": [
+          "type"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "div": {
+        "name": "div",
+        "allowed_args": [
+          "class",
+          "id",
+          "style"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "chapter": {
+        "name": "chapter",
+        "allowed_args": [
+          "id",
+          "title"
+        ],
+        "category": "flow",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "comment": {
+        "name": "comment",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "h1": {
+        "name": "h1",
+        "allowed_args": [
+          "class",
+          "id"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "footnote": {
+        "name": "footnote",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "ref": {
+        "name": "ref",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "b": {
+        "name": "b",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "emphasis": {
+        "name": "emphasis",
+        "allowed_args": [
+          "level"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "item": {
+        "name": "item",
+        "allowed_args": [],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "index": {
+        "name": "index",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "strong": {
+        "name": "strong",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "verse": {
+        "name": "verse",
+        "allowed_args": [
+          "id"
+        ],
+        "category": "structure",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": true,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "ul": {
+        "name": "ul",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "li": {
+        "name": "li",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "ol": {
+        "name": "ol",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "blockquote": {
+        "name": "blockquote",
+        "allowed_args": [
+          "class"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "mula": {
+        "name": "mula",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "sanjaya": {
+        "name": "sanjaya",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "stream": {
+        "name": "stream",
+        "allowed_args": [
+          "ref"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "uvaca": {
+        "name": "uvaca",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "set": {
+        "name": "set",
+        "allowed_args": [],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": true
+      },
+      "marker": {
+        "name": "marker",
+        "allowed_args": [
+          "id"
+        ],
+        "category": "structure",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": true,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "each": {
+        "name": "each",
+        "allowed_args": [
+          "source"
+        ],
+        "category": "control",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "filter": {
+        "name": "filter",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "alias-def": {
+        "name": "alias-def",
+        "allowed_args": [
+          "name",
+          "target"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "a": {
+        "name": "a",
+        "allowed_args": [
+          "href",
+          "class",
+          "id",
+          "target"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "title": {
+        "name": "title",
+        "allowed_args": [
+          "type"
+        ],
+        "category": "structure",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "span": {
+        "name": "span",
+        "allowed_args": [
+          "class",
+          "id",
+          "style"
+        ],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": true
+      },
+      "note": {
+        "name": "note",
+        "allowed_args": [],
+        "category": "content",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "iast": {
+        "name": "iast",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "heading": {
+        "name": "heading",
+        "allowed_args": [
+          "level"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "template": {
+        "name": "template",
+        "allowed_args": [
+          "target",
+          "name",
+          "namespace"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": true
+      },
+      "refer": {
+        "name": "refer",
+        "allowed_args": [
+          "urn"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "interlinear-streams": {
+        "name": "interlinear-streams",
+        "allowed_args": [
+          "id",
+          "pattern"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      },
+      "para": {
+        "name": "para",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "em": {
+        "name": "em",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "list": {
+        "name": "list",
+        "allowed_args": [
+          "type"
+        ],
+        "category": "formatting",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "command-def": {
+        "name": "command-def",
+        "allowed_args": [
+          "name",
+          "args",
+          "category",
+          "desc",
+          "whitespace",
+          "urn",
+          "propagate_state",
+          "flexible_args"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": true
+      },
+      "canto": {
+        "name": "canto",
+        "allowed_args": [
+          "id",
+          "title"
+        ],
+        "category": "flow",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "i": {
+        "name": "i",
+        "allowed_args": [],
+        "category": "html",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "v": {
+        "name": "v",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "e2": {
+        "name": "e2",
+        "allowed_args": [],
+        "category": "template",
+        "description": "Auto-generated from template file",
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": true,
+        "flexible_args": false
+      },
+      "entity": {
+        "name": "entity",
+        "allowed_args": [
+          "type",
+          "speaker",
+          "urn",
+          "action"
+        ],
+        "category": "meta",
+        "description": null,
+        "whitespace_mode": null,
+        "urn": false,
+        "propagate_state": false,
+        "flexible_args": false
+      }
+    },
+    "templates": {
+      "item": {
+        "html": {
+          "type": "Template",
+          "target": "item",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 5063,
+                "line": 113,
+                "column": 47
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "li",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 5068,
+                    "line": 113,
+                    "column": 52
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5064,
+                "line": 113,
+                "column": 48
+              }
+            }
+          ]
+        }
+      },
+      "emphasis": {
+        "html": {
+          "type": "Template",
+          "target": "emphasis",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "op": "eq",
+                "lhs": "$.level",
+                "rhs": "1"
+              },
+              "children": [
+                {
+                  "type": "Command",
+                  "cmd": "strong",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 5181,
+                        "line": 116,
+                        "column": 52
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 5173,
+                    "line": 116,
+                    "column": 44
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5134,
+                "line": 116,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "1",
+                "lhs": "$.level",
+                "op": "neq"
+              },
+              "children": [
+                {
+                  "type": "Command",
+                  "cmd": "em",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 5238,
+                        "line": 117,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 5234,
+                    "line": 117,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5194,
+                "line": 117,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "list": {
+        "html": {
+          "type": "Template",
+          "target": "list",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "ordered",
+                "lhs": "$.type",
+                "op": "eq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4935,
+                    "line": 109,
+                    "column": 49
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "ol",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4940,
+                        "line": 109,
+                        "column": 54
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4936,
+                    "line": 109,
+                    "column": 50
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4891,
+                "line": 109,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "ordered",
+                "lhs": "$.type",
+                "op": "neq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4999,
+                    "line": 110,
+                    "column": 50
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "ul",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 5004,
+                        "line": 110,
+                        "column": 55
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 5000,
+                    "line": 110,
+                    "column": 51
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4954,
+                "line": 110,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "heading": {
+        "html": {
+          "type": "Template",
+          "target": "heading",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "lhs": "$.level",
+                "op": "eq",
+                "rhs": "1"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4473,
+                    "line": 95,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h1",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4478,
+                        "line": 95,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4474,
+                    "line": 95,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4434,
+                "line": 95,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "2",
+                "lhs": "$.level",
+                "op": "eq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4531,
+                    "line": 96,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h2",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4536,
+                        "line": 96,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4532,
+                    "line": 96,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4492,
+                "line": 96,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "rhs": "3",
+                "lhs": "$.level",
+                "op": "eq"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4589,
+                    "line": 97,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h3",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4594,
+                        "line": 97,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4590,
+                    "line": 97,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4550,
+                "line": 97,
+                "column": 5
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "if",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "lhs": "$.level",
+                "op": "gt",
+                "rhs": "3"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": " ",
+                  "location": {
+                    "offset": 4647,
+                    "line": 98,
+                    "column": 44
+                  }
+                },
+                {
+                  "type": "Command",
+                  "cmd": "h4",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {},
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "$.body",
+                      "location": {
+                        "offset": 4652,
+                        "line": 98,
+                        "column": 49
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 4648,
+                    "line": 98,
+                    "column": 45
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4608,
+                "line": 98,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "v": {
+        "html": {
+          "type": "Template",
+          "target": "v",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "verse",
+                "style": "white-space: pre-line; margin-bottom: 1.5rem;"
+              },
+              "children": [
+                {
+                  "type": "Command",
+                  "cmd": "strong",
+                  "argument": null,
+                  "delimiter": null,
+                  "attributes": {
+                    "style": "display: block; color: #64748b; font-size: 0.9em; margin-bottom: 0.25rem;"
+                  },
+                  "children": [
+                    {
+                      "type": "Text",
+                      "value": "Verse $.argument",
+                      "location": {
+                        "offset": 440,
+                        "line": 17,
+                        "column": 98
+                      }
+                    }
+                  ],
+                  "location": {
+                    "offset": 345,
+                    "line": 17,
+                    "column": 3
+                  }
+                },
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 457,
+                    "line": 17,
+                    "column": 115
+                  }
+                }
+              ],
+              "location": {
+                "offset": 264,
+                "line": 16,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "iast": {
+        "html": {
+          "type": "Template",
+          "target": "iast",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "iast",
+                "style": "white-space: pre-line;"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 163,
+                    "line": 8,
+                    "column": 55
+                  }
+                }
+              ],
+              "location": {
+                "offset": 109,
+                "line": 8,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "ref": {
+        "html": {
+          "type": "Template",
+          "target": "ref",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 500,
+                "line": 23,
+                "column": 7
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "a",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "href": "$.argument"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 527,
+                    "line": 23,
+                    "column": 34
+                  }
+                }
+              ],
+              "location": {
+                "offset": 501,
+                "line": 23,
+                "column": 8
+              }
+            }
+          ]
+        }
+      },
+      "arjuna": {
+        "html": {
+          "type": "Template",
+          "target": "arjuna",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 816,
+                "line": 30,
+                "column": 10
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "data-entity": "arjuna",
+                "class": "vyasa-debug-marker"
+              },
+              "children": [],
+              "location": {
+                "offset": 817,
+                "line": 30,
+                "column": 11
+              }
+            }
+          ]
+        }
+      },
+      "krishna": {
+        "html": {
+          "type": "Template",
+          "target": "krishna",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 892,
+                "line": 31,
+                "column": 11
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "data-entity": "krishna",
+                "class": "vyasa-debug-marker"
+              },
+              "children": [],
+              "location": {
+                "offset": 893,
+                "line": 31,
+                "column": 12
+              }
+            }
+          ]
+        }
+      },
+      "sanjaya": {
+        "html": {
+          "type": "Template",
+          "target": "sanjaya",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 740,
+                "line": 29,
+                "column": 11
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "vyasa-debug-marker",
+                "data-entity": "sanjaya"
+              },
+              "children": [],
+              "location": {
+                "offset": 741,
+                "line": 29,
+                "column": 12
+              }
+            }
+          ]
+        }
+      },
+      "quote": {
+        "html": {
+          "type": "Template",
+          "target": "quote",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 5372,
+                "line": 123,
+                "column": 48
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "blockquote",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 5385,
+                    "line": 123,
+                    "column": 61
+                  }
+                }
+              ],
+              "location": {
+                "offset": 5373,
+                "line": 123,
+                "column": 49
+              }
+            }
+          ]
+        }
+      },
+      "title": {
+        "html": {
+          "type": "Template",
+          "target": "title",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "h1",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "title"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 4741,
+                    "line": 102,
+                    "column": 28
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4718,
+                "line": 102,
+                "column": 5
+              }
+            }
+          ]
+        }
+      },
+      "para": {
+        "html": {
+          "type": "Template",
+          "target": "para",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 4825,
+                "line": 106,
+                "column": 47
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "p",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 4829,
+                    "line": 106,
+                    "column": 51
+                  }
+                }
+              ],
+              "location": {
+                "offset": 4826,
+                "line": 106,
+                "column": 48
+              }
+            }
+          ]
+        }
+      },
+      "e1": {
+        "html": {
+          "type": "Template",
+          "target": "e1",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 542,
+                "line": 24,
+                "column": 6
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "strong",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 552,
+                    "line": 24,
+                    "column": 16
+                  }
+                }
+              ],
+              "location": {
+                "offset": 543,
+                "line": 24,
+                "column": 7
+              }
+            }
+          ]
+        }
+      },
+      "devanagari": {
+        "html": {
+          "type": "Template",
+          "target": "devanagari",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "style": "white-space: pre-line;",
+                "class": "devanagari"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 248,
+                    "line": 12,
+                    "column": 61
+                  }
+                }
+              ],
+              "location": {
+                "offset": 188,
+                "line": 12,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "e2": {
+        "html": {
+          "type": "Template",
+          "target": "e2",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 567,
+                "line": 25,
+                "column": 6
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "em",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 573,
+                    "line": 25,
+                    "column": 12
+                  }
+                }
+              ],
+              "location": {
+                "offset": 568,
+                "line": 25,
+                "column": 7
+              }
+            }
+          ]
+        }
+      },
+      "dhritarashtra": {
+        "html": {
+          "type": "Template",
+          "target": "dhritarashtra",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 657,
+                "line": 28,
+                "column": 17
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "vyasa-debug-marker",
+                "data-entity": "dhritarashtra"
+              },
+              "children": [],
+              "location": {
+                "offset": 658,
+                "line": 28,
+                "column": 18
+              }
+            }
+          ]
+        }
+      },
+      "mula": {
+        "html": {
+          "type": "Template",
+          "target": "mula",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Command",
+              "cmd": "div",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "mula",
+                "style": "white-space: pre-line;"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "value": "$.body",
+                  "location": {
+                    "offset": 90,
+                    "line": 4,
+                    "column": 55
+                  }
+                }
+              ],
+              "location": {
+                "offset": 36,
+                "line": 4,
+                "column": 1
+              }
+            }
+          ]
+        }
+      },
+      "uvaca": {
+        "html": {
+          "type": "Template",
+          "target": "uvaca",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 967,
+                "line": 32,
+                "column": 9
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "span",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {
+                "class": "vyasa-debug-marker",
+                "data-action": "uvaca"
+              },
+              "children": [],
+              "location": {
+                "offset": 968,
+                "line": 32,
+                "column": 10
+              }
+            }
+          ]
+        }
+      },
+      "break": {
+        "html": {
+          "type": "Template",
+          "target": "break",
+          "namespace": "html",
+          "body": [
+            {
+              "type": "Text",
+              "value": " ",
+              "location": {
+                "offset": 5297,
+                "line": 120,
+                "column": 48
+              }
+            },
+            {
+              "type": "Command",
+              "cmd": "br",
+              "argument": null,
+              "delimiter": null,
+              "attributes": {},
+              "children": [],
+              "location": {
+                "offset": 5298,
+                "line": 120,
+                "column": 49
+              }
+            }
+          ]
+        }
+      }
+    },
+    "view_imports": {},
+    "view_body": null,
+    "break_after": null
+  },
+  "body": [
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "1",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:1"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "saptacatvāriṃśaḥ sargaḥ 47\nśrīvasiṣṭha uvāca ",
+          "location": {
+            "offset": 6,
+            "line": 1,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 67,
+            "line": 3,
+            "column": 19
+          }
+        },
+        {
+          "type": "Text",
+          "value": "saṃsārabhārasuśrāntaḥ saṃkaṭeṣu luṭhattanuḥ ",
+          "location": {
+            "offset": 68,
+            "line": 3,
+            "column": 20
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 131,
+            "line": 4,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "yo'bhivāñchati viśrāntiṃ tasya kramamimaṃ śṛṇu",
+          "location": {
+            "offset": 132,
+            "line": 4,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 0,
+        "line": 1,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "2",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:2"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "pūrvaṃ vivekakaṇikā yadā svahṛdi jāyate ",
+          "location": {
+            "offset": 202,
+            "line": 8,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 253,
+            "line": 9,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "saṃsāranirvedamayī kāraṇādvāpyakāraṇāt",
+          "location": {
+            "offset": 254,
+            "line": 9,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 196,
+        "line": 8,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "3",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:3"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "tadā śrayanti sacchāyānsādhutvasuviśālinaḥ ",
+          "location": {
+            "offset": 316,
+            "line": 13,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 369,
+            "line": 14,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "adhvaśramaharāṃstāpataptā mārgatarūniva",
+          "location": {
+            "offset": 370,
+            "line": 14,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 310,
+        "line": 13,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "4",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:4"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "dūre pariharatyajñānyajñayūpānivādhvagaḥ ",
+          "location": {
+            "offset": 428,
+            "line": 18,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 479,
+            "line": 19,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "snānadānatapoyajñānkaroti vibudhānugaḥ",
+          "location": {
+            "offset": 480,
+            "line": 19,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 422,
+        "line": 18,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "5",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:5"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "peśalaṃ cānurūpaṃ ca vyavahāramakṛtrimam ",
+          "location": {
+            "offset": 536,
+            "line": 23,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 588,
+            "line": 24,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "lokyamāhlādanaṃ dhatte candrabimbamivāmṛtam",
+          "location": {
+            "offset": 589,
+            "line": 24,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 530,
+        "line": 23,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "6",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:6"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "paraprajñānugo bhavyaḥ parārthaparipūrakaḥ ",
+          "location": {
+            "offset": 650,
+            "line": 28,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 702,
+            "line": 29,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "pavitrakarmarasikaḥ ko'pi saumyaḥ pravartate",
+          "location": {
+            "offset": 703,
+            "line": 29,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 644,
+        "line": 28,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "7",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:7"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "navanītasthalīvā'cchā snigdhā mṛdvī manoharā ",
+          "location": {
+            "offset": 762,
+            "line": 33,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 817,
+            "line": 34,
+            "column": 46
+          }
+        },
+        {
+          "type": "Text",
+          "value": "janaṃ sukhayati svādvī tadīyā navasaṃgatiḥ",
+          "location": {
+            "offset": 818,
+            "line": 34,
+            "column": 47
+          }
+        }
+      ],
+      "location": {
+        "offset": 756,
+        "line": 33,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "8",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:8"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "śītalāni pavitrāṇi caritāni vivekinaḥ ",
+          "location": {
+            "offset": 881,
+            "line": 38,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 929,
+            "line": 39,
+            "column": 39
+          }
+        },
+        {
+          "type": "Text",
+          "value": "indorivāṃśujālāni janaṃ śītalayantyalam",
+          "location": {
+            "offset": 930,
+            "line": 39,
+            "column": 40
+          }
+        }
+      ],
+      "location": {
+        "offset": 875,
+        "line": 38,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "9",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:9"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "na tathodyānakhaṇḍeṣu puṣpaprakarahāriṣu ",
+          "location": {
+            "offset": 990,
+            "line": 43,
+            "column": 7
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1044,
+            "line": 44,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "viśrāmyate vītabhayaṃ yathā sādhusamāgame",
+          "location": {
+            "offset": 1045,
+            "line": 44,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 984,
+        "line": 43,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "10",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:10"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "mandākinīpayāṃsīva saṃgatāni vivekinām ",
+          "location": {
+            "offset": 1106,
+            "line": 48,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1156,
+            "line": 49,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "prakṣālayanti pāpāni prayacchanti viśuddhatām",
+          "location": {
+            "offset": 1157,
+            "line": 49,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 1099,
+        "line": 48,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "11",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:11"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "vivekiṣu virakteṣu saṃsārottaraṇārthiṣu ",
+          "location": {
+            "offset": 1221,
+            "line": 53,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1274,
+            "line": 54,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "janaḥ śītalatāmeti himahāragṛheṣviva",
+          "location": {
+            "offset": 1275,
+            "line": 54,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 1214,
+        "line": 53,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "12",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:12"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "nanu nāmaratodārā yā vivekini vidyate ",
+          "location": {
+            "offset": 1333,
+            "line": 58,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1376,
+            "line": 59,
+            "column": 39
+          }
+        },
+        {
+          "type": "Text",
+          "value": "suragandharvakanyāsu mānavīṣu na vidyate",
+          "location": {
+            "offset": 1377,
+            "line": 59,
+            "column": 40
+          }
+        }
+      ],
+      "location": {
+        "offset": 1326,
+        "line": 58,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "13",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:13"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "prajñā prasādamāyāti kramāducitakarmaṇaḥ ",
+          "location": {
+            "offset": 1434,
+            "line": 63,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1486,
+            "line": 64,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "antaḥkaroti śāstrārthamarthaṃ mukurabhūriva",
+          "location": {
+            "offset": 1487,
+            "line": 64,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 1427,
+        "line": 63,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "14",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:14"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "satprajñonnatimāyāti śāstrārtharasaśālinī ",
+          "location": {
+            "offset": 1550,
+            "line": 68,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1602,
+            "line": 69,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "vivekini vilāsena kadalīva mahāvane",
+          "location": {
+            "offset": 1603,
+            "line": 69,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 1543,
+        "line": 68,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "15",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:15"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "antarevānubhavati sarvārthānpratibimbitān ",
+          "location": {
+            "offset": 1653,
+            "line": 73,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1700,
+            "line": 74,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "ādarśavadaśeṣeṇa prajñā nairmalyaśālinī",
+          "location": {
+            "offset": 1701,
+            "line": 74,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 1646,
+        "line": 73,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "16",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:16"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "sādhusaṃgamaśuddhātmā śāstrārthaparimārjitaḥ ",
+          "location": {
+            "offset": 1764,
+            "line": 78,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1822,
+            "line": 79,
+            "column": 46
+          }
+        },
+        {
+          "type": "Text",
+          "value": "prājño bhātyuddhṛtaṃ vahneragniśaucamivāṃśukam",
+          "location": {
+            "offset": 1823,
+            "line": 79,
+            "column": 47
+          }
+        }
+      ],
+      "location": {
+        "offset": 1757,
+        "line": 78,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "17",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:17"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "kacatkāñcanakāntena vimalālokakāriṇā ",
+          "location": {
+            "offset": 1893,
+            "line": 83,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 1939,
+            "line": 84,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "bhuvanaṃ bhāskareṇeva bhāti sādhuḥ svatejasā",
+          "location": {
+            "offset": 1940,
+            "line": 84,
+            "column": 39
+          }
+        }
+      ],
+      "location": {
+        "offset": 1886,
+        "line": 83,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "18",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:18"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "tathānugacchati prājñaḥ śāstrasādhusamāgamau ",
+          "location": {
+            "offset": 2006,
+            "line": 88,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2061,
+            "line": 89,
+            "column": 46
+          }
+        },
+        {
+          "type": "Text",
+          "value": "yathātyantānuṣaṅgeṇa tāvevānubhavatyasau",
+          "location": {
+            "offset": 2062,
+            "line": 89,
+            "column": 47
+          }
+        }
+      ],
+      "location": {
+        "offset": 1999,
+        "line": 88,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "19",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:19"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "śāstramabhyāsena sādhorguroḥ samāgamaṃ ca sevādinā tathā anugacchati\nnirantaramanusarati yathā atyantaṃn tadupadiṣṭārthābhiniveśalakṣaṇena tadanuṣaṅgeṇa\nsvapne'pi taccintanatacchuśrūṣāparastāvevānubhavati na tadanuṣaṅgeṇa svapne'pi\ntaccintanatacchuśrūṣāparastāvevānubhavati na tadatiriktaṃ svaśarīrādikamapītyarthaḥ ",
+          "location": {
+            "offset": 2124,
+            "line": 93,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2501,
+            "line": 97,
+            "column": 85
+          }
+        },
+        {
+          "type": "Text",
+          "value": "18 ",
+          "location": {
+            "offset": 2502,
+            "line": 97,
+            "column": 86
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2506,
+            "line": 98,
+            "column": 4
+          }
+        },
+        {
+          "type": "Text",
+          "value": "kramātsajjanatāmetya śāstrārthabharabhāvitaḥ ",
+          "location": {
+            "offset": 2507,
+            "line": 98,
+            "column": 5
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2561,
+            "line": 99,
+            "column": 46
+          }
+        },
+        {
+          "type": "Text",
+          "value": "bhāti bhogānadhaḥkurvanpañjarādiva nirgataḥ",
+          "location": {
+            "offset": 2562,
+            "line": 99,
+            "column": 47
+          }
+        }
+      ],
+      "location": {
+        "offset": 2117,
+        "line": 93,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "20",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:20"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "bhogābhigamadaurbhāgyaṃ dinānudinamujjhatā ",
+          "location": {
+            "offset": 2625,
+            "line": 103,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2675,
+            "line": 104,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "tena tatkulamābhāti tārācakramivendunā",
+          "location": {
+            "offset": 2676,
+            "line": 104,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 2618,
+        "line": 103,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "21",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:21"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "abhogakṛpaṇā kāpi na caivāsya pravartate ",
+          "location": {
+            "offset": 2731,
+            "line": 108,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2780,
+            "line": 109,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "mukhe kāntirapūrvaiva candre rāhumṛte yathā",
+          "location": {
+            "offset": 2781,
+            "line": 109,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 2724,
+        "line": 108,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "22",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:22"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "tṛṇīkṛtatrijagatāṃ mahatāmabhidheyatām ",
+          "location": {
+            "offset": 2842,
+            "line": 113,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 2894,
+            "line": 114,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "sa yāti kalpaviṭapī nabhasīva divaukasām",
+          "location": {
+            "offset": 2895,
+            "line": 114,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 2835,
+        "line": 113,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "23",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:23"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "bhogānāṃ dveṣaṇenāntarlajjamāno manasyapi ",
+          "location": {
+            "offset": 2953,
+            "line": 118,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3006,
+            "line": 119,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "bhogānāmapyasaṃpattyā paramaṃ parituṣyati",
+          "location": {
+            "offset": 3007,
+            "line": 119,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 2946,
+        "line": 118,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "24",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:24"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "svā evopahasatyantastaruṇīstaralakriyāḥ ",
+          "location": {
+            "offset": 3069,
+            "line": 123,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3117,
+            "line": 124,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "khedasmeramukho jātīrjātismara ivādhamaḥ",
+          "location": {
+            "offset": 3118,
+            "line": 124,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 3062,
+        "line": 123,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "25",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:25"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "prāktanīstaruṇīḥ rāgādiprauḍhāḥ svāḥ svīyā eva bhogautsukyataralāḥ kriyāḥ\nsāṃprataṃ smaran khedena smeramukhaḥ sannantarupahasati yathā\nadhamaścāṇḍālādirdaivājjātismaraḥ san svā eva jātīrantarupahasati tadvadityarthaḥ ",
+          "location": {
+            "offset": 3176,
+            "line": 128,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3445,
+            "line": 131,
+            "column": 83
+          }
+        },
+        {
+          "type": "Text",
+          "value": " 24",
+          "location": {
+            "offset": 3446,
+            "line": 131,
+            "column": 84
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3450,
+            "line": 132,
+            "column": 1
+          }
+        },
+        {
+          "type": "Text",
+          "value": "atha taṃ draṣṭumāyānti sauhārdenaiva sādhavaḥ ",
+          "location": {
+            "offset": 3451,
+            "line": 132,
+            "column": 2
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3510,
+            "line": 133,
+            "column": 47
+          }
+        },
+        {
+          "type": "Text",
+          "value": "bhūmāvivoditaṃ candraṃ vismayotphullalocanāḥ",
+          "location": {
+            "offset": 3511,
+            "line": 133,
+            "column": 48
+          }
+        }
+      ],
+      "location": {
+        "offset": 3169,
+        "line": 128,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "26",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:26"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "nityānādṛtabhogo'sau tato'pyucitayā dhiyā ",
+          "location": {
+            "offset": 3576,
+            "line": 137,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3625,
+            "line": 138,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "prāptamapyucitārambhaṃ bhogaṃ na bahumanyate",
+          "location": {
+            "offset": 3626,
+            "line": 138,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 3569,
+        "line": 137,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "27",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:27"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "pūrvaṃ saṃsṛtivairasyamantarevoditātmanaḥ ",
+          "location": {
+            "offset": 3688,
+            "line": 142,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3741,
+            "line": 143,
+            "column": 43
+          }
+        },
+        {
+          "type": "Text",
+          "value": "jāyate jīrṇajāḍyasya pākādiva śarattaroḥ",
+          "location": {
+            "offset": 3742,
+            "line": 143,
+            "column": 44
+          }
+        }
+      ],
+      "location": {
+        "offset": 3681,
+        "line": 142,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "28",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:28"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "tataḥ sajjanasaṃparkamudarkaśreyase svayam ",
+          "location": {
+            "offset": 3806,
+            "line": 147,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3855,
+            "line": 148,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "karoti svasthatāgṛdhrurbhiṣagāśrayaṇaṃ yathā",
+          "location": {
+            "offset": 3856,
+            "line": 148,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 3799,
+        "line": 147,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "29",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:29"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "tenodāramatirbhūtvā śāstrārtheṣu nimajjati ",
+          "location": {
+            "offset": 3924,
+            "line": 152,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 3976,
+            "line": 153,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "mahānmahāprasanneṣu saraḥsviva mahāgajaḥ",
+          "location": {
+            "offset": 3977,
+            "line": 153,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 3917,
+        "line": 152,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "30",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:30"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "sajjano hi samuttārya vipadbhyo nikaṭasthitam ",
+          "location": {
+            "offset": 4038,
+            "line": 157,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4088,
+            "line": 158,
+            "column": 47
+          }
+        },
+        {
+          "type": "Text",
+          "value": "niyojayati saṃpatsu svālokeṣviva bhāskaraḥ",
+          "location": {
+            "offset": 4089,
+            "line": 158,
+            "column": 48
+          }
+        }
+      ],
+      "location": {
+        "offset": 4031,
+        "line": 157,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "31",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:31"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "parasvādānaviratiḥ pūrvameva pravartate ",
+          "location": {
+            "offset": 4151,
+            "line": 162,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4197,
+            "line": 163,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "vivekino nijārtheṣu saṃtoṣaścopajāyate",
+          "location": {
+            "offset": 4198,
+            "line": 163,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 4144,
+        "line": 162,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "32",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:32"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "parasvādānavirataḥ saṃtoṣāmṛtanirbharaḥ ",
+          "location": {
+            "offset": 4257,
+            "line": 167,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4311,
+            "line": 168,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "vivekī kramaśaḥ svārthānapyupekṣitumicchati",
+          "location": {
+            "offset": 4312,
+            "line": 168,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 4250,
+        "line": 167,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "33",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:33"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "dadāti kaṇapiṇyākaśākādyapi hi yācate ",
+          "location": {
+            "offset": 4375,
+            "line": 172,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4424,
+            "line": 173,
+            "column": 39
+          }
+        },
+        {
+          "type": "Text",
+          "value": "tenaivābhyāsayogena svamāṃsāni dadātyasau",
+          "location": {
+            "offset": 4425,
+            "line": 173,
+            "column": 40
+          }
+        }
+      ],
+      "location": {
+        "offset": 4368,
+        "line": 172,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "34",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:34"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "nūnaṃ vilayacittānāṃ vivekamanudhāvatām ",
+          "location": {
+            "offset": 4485,
+            "line": 177,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4535,
+            "line": 178,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "maurkhyaṃn laghutvamāyāti dhāvatāmiva goṣpadam",
+          "location": {
+            "offset": 4536,
+            "line": 178,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 4478,
+        "line": 177,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "35",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:35"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "vivekānusaraṇakrameṇa vilīyamānacittānāṃ dine dine jñānapracayenājñānaṃn kṣīyata\nityāha - nūnamiti ",
+          "location": {
+            "offset": 4602,
+            "line": 182,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4725,
+            "line": 184,
+            "column": 19
+          }
+        },
+        {
+          "type": "Text",
+          "value": " maurkhyamajñānam ",
+          "location": {
+            "offset": 4726,
+            "line": 184,
+            "column": 20
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4746,
+            "line": 184,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": " laghutvamapakṣayeṇālpatām ",
+          "location": {
+            "offset": 4747,
+            "line": 184,
+            "column": 39
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4780,
+            "line": 184,
+            "column": 66
+          }
+        },
+        {
+          "type": "Text",
+          "value": " yathā\ndhāvatāmaśvādīnāṃ goṣpadamanāyāsollaṅghyatvalakṣaṇaṃ kṣudratvamāyāti tadvat ",
+          "location": {
+            "offset": 4781,
+            "line": 184,
+            "column": 67
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4889,
+            "line": 185,
+            "column": 77
+          }
+        },
+        {
+          "type": "Text",
+          "value": "34 ",
+          "location": {
+            "offset": 4890,
+            "line": 185,
+            "column": 78
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 4894,
+            "line": 186,
+            "column": 4
+          }
+        },
+        {
+          "type": "Text",
+          "value": "parārthādānaviratiṃ ",
+          "location": {
+            "offset": 4895,
+            "line": 186,
+            "column": 5
+          }
+        },
+        {
+          "type": "Command",
+          "cmd": "note",
+          "argument": null,
+          "delimiter": null,
+          "attributes": {
+            "urn": "urn:vyasa:yv:mula_iast:6:35"
+          },
+          "children": [
+            {
+              "type": "Text",
+              "value": "parasvādāna iti ṭīkānuguṇaḥ pāṭhaḥ ",
+              "location": {
+                "offset": 4927,
+                "line": 187,
+                "column": 27
+              }
+            },
+            {
+              "type": "SegmentBreak",
+              "location": {
+                "offset": 4977,
+                "line": 187,
+                "column": 62
+              }
+            }
+          ],
+          "location": {
+            "offset": 4921,
+            "line": 187,
+            "column": 21
+          }
+        },
+        {
+          "type": "Text",
+          "value": "pūrvamabhyasya yatnataḥ ",
+          "location": {
+            "offset": 4979,
+            "line": 187,
+            "column": 64
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5007,
+            "line": 188,
+            "column": 25
+          }
+        },
+        {
+          "type": "Text",
+          "value": "āhartavyā vivekena tataḥ svārtheṣvaraktatā",
+          "location": {
+            "offset": 5008,
+            "line": 188,
+            "column": 26
+          }
+        }
+      ],
+      "location": {
+        "offset": 4595,
+        "line": 182,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "36",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:36"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "tato bhoganirāsena saha svārthanirākṛtiḥ ",
+          "location": {
+            "offset": 5070,
+            "line": 192,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5119,
+            "line": 193,
+            "column": 42
+          }
+        },
+        {
+          "type": "Text",
+          "value": "paramāyai suviśrāntyai kriyate kṛtibhiḥ kramāt",
+          "location": {
+            "offset": 5120,
+            "line": 193,
+            "column": 43
+          }
+        }
+      ],
+      "location": {
+        "offset": 5063,
+        "line": 192,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "37",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:37"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "na tādṛśaṃ jagatyasminduḥkhaṃn narakakoṭiṣu ",
+          "location": {
+            "offset": 5186,
+            "line": 197,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5245,
+            "line": 198,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "yādṛśaṃ yāvadāyuṣkamarthopārjanaśāsanam",
+          "location": {
+            "offset": 5246,
+            "line": 198,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 5179,
+        "line": 197,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "38",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:38"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "āsane śayane yāne gamane ramaṇe jane ",
+          "location": {
+            "offset": 5310,
+            "line": 202,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5353,
+            "line": 203,
+            "column": 38
+          }
+        },
+        {
+          "type": "Text",
+          "value": "ādhicintāparā ",
+          "location": {
+            "offset": 5354,
+            "line": 203,
+            "column": 39
+          }
+        },
+        {
+          "type": "Command",
+          "cmd": "note",
+          "argument": null,
+          "delimiter": null,
+          "attributes": {
+            "urn": "urn:vyasa:yv:mula_iast:6:38"
+          },
+          "children": [
+            {
+              "type": "Text",
+              "value": "arthacintā iti pāṭhaḥ ",
+              "location": {
+                "offset": 5378,
+                "line": 204,
+                "column": 21
+              }
+            },
+            {
+              "type": "SegmentBreak",
+              "location": {
+                "offset": 5406,
+                "line": 204,
+                "column": 43
+              }
+            }
+          ],
+          "location": {
+            "offset": 5372,
+            "line": 204,
+            "column": 15
+          }
+        },
+        {
+          "type": "Text",
+          "value": " eva nanu mūḍhā vidantu tām",
+          "location": {
+            "offset": 5408,
+            "line": 204,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 5303,
+        "line": 202,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "39",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:39"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "nanvarthā vitatānarthāḥ saṃpadaḥ saṃtatāpadaḥ ",
+          "location": {
+            "offset": 5451,
+            "line": 207,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5512,
+            "line": 208,
+            "column": 47
+          }
+        },
+        {
+          "type": "Text",
+          "value": "bhogā bhavamahārogā viparītena bhāvitāḥ",
+          "location": {
+            "offset": 5513,
+            "line": 208,
+            "column": 48
+          }
+        }
+      ],
+      "location": {
+        "offset": 5444,
+        "line": 207,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "40",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:40"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "tāvannāyāti vairasyaṃ cintāviṣayajṛmbhaṇaiḥ ",
+          "location": {
+            "offset": 5572,
+            "line": 212,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5631,
+            "line": 213,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "yāvadarthamahānartho na kadarthārthamarthyate",
+          "location": {
+            "offset": 5632,
+            "line": 213,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 5565,
+        "line": 212,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "41",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:41"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "anuttamasukhaṃ yasmai cirāya parirocate ",
+          "location": {
+            "offset": 5692,
+            "line": 217,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5736,
+            "line": 218,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "jagattṛṇaśikhādṛṣṭyā so'rthaṃ paśyatu śāmyatu",
+          "location": {
+            "offset": 5737,
+            "line": 218,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 5685,
+        "line": 217,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "42",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:42"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "bhūribhāvavikārāṇāṃ jarāmaraṇakarmaṇām ",
+          "location": {
+            "offset": 5812,
+            "line": 222,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5867,
+            "line": 223,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "dainyadaurātmyadāhānāmarthaḥ sārtha iti smṛtaḥ",
+          "location": {
+            "offset": 5868,
+            "line": 223,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 5805,
+        "line": 222,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "43",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:43"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "asmiñjagati jantūnāṃ jarāmaraṇaśālinām ",
+          "location": {
+            "offset": 5937,
+            "line": 227,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 5988,
+            "line": 228,
+            "column": 40
+          }
+        },
+        {
+          "type": "Text",
+          "value": "ajarāmaraṇaṃ kartuṃ saṃtoṣo'sti rasāyanam",
+          "location": {
+            "offset": 5989,
+            "line": 228,
+            "column": 41
+          }
+        }
+      ],
+      "location": {
+        "offset": 5930,
+        "line": 227,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "44",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:44"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "saṃtoṣa eva vairāgyapratiṣṭhāpanena sarvaduḥkhahārīti taṃ praśaṃsati - asminniti ",
+          "location": {
+            "offset": 6054,
+            "line": 232,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6155,
+            "line": 233,
+            "column": 82
+          }
+        },
+        {
+          "type": "Text",
+          "value": "43 ",
+          "location": {
+            "offset": 6156,
+            "line": 233,
+            "column": 83
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6160,
+            "line": 234,
+            "column": 4
+          }
+        },
+        {
+          "type": "Text",
+          "value": "vasanto nandannodyānamindurapsarasaḥ smṛtāḥ ",
+          "location": {
+            "offset": 6161,
+            "line": 234,
+            "column": 5
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6214,
+            "line": 235,
+            "column": 45
+          }
+        },
+        {
+          "type": "Text",
+          "value": "ityekataḥ samuditaṃ saṃtoṣāmṛtamekataḥ",
+          "location": {
+            "offset": 6215,
+            "line": 235,
+            "column": 46
+          }
+        }
+      ],
+      "location": {
+        "offset": 6047,
+        "line": 232,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "45",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:45"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "sarasaḥ prāvṛṣevāntaḥ saṃtoṣeṇaiva pūrṇatā ",
+          "location": {
+            "offset": 6278,
+            "line": 239,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6342,
+            "line": 240,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "gambhīrāṃ śītalāṃ hṛdyāṃ prasannāṃ rasaśālinīm",
+          "location": {
+            "offset": 6343,
+            "line": 240,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 6271,
+        "line": 239,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "46",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:46"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "sādhurojasvitāmetya saṃtoṣeṇaiva rājate ",
+          "location": {
+            "offset": 6421,
+            "line": 244,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6471,
+            "line": 245,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "supuṣpitavanākāro vasanteneva pādapaḥ",
+          "location": {
+            "offset": 6472,
+            "line": 245,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 6414,
+        "line": 244,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "47",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:47"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "pādapīṭhaparāmarśapiṣṭakīṭavadīhate ",
+          "location": {
+            "offset": 6528,
+            "line": 249,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6579,
+            "line": 250,
+            "column": 37
+          }
+        },
+        {
+          "type": "Text",
+          "value": "dīnaprakṛtirarthārthī duḥkhādduḥkhāntaraṃ vrajet",
+          "location": {
+            "offset": 6580,
+            "line": 250,
+            "column": 38
+          }
+        }
+      ],
+      "location": {
+        "offset": 6521,
+        "line": 249,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "48",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:48"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "kallolavikalāḥ kṣubdhasamudrapatitā iva ",
+          "location": {
+            "offset": 6653,
+            "line": 254,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6700,
+            "line": 255,
+            "column": 41
+          }
+        },
+        {
+          "type": "Text",
+          "value": "nāpnuvanti sthitiṃ svasthāṃ vikṛtākṛtayo'rthinaḥ",
+          "location": {
+            "offset": 6701,
+            "line": 255,
+            "column": 42
+          }
+        }
+      ],
+      "location": {
+        "offset": 6646,
+        "line": 254,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "49",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:49"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "saṃpadaḥ pramadāścaiva taraṅgottuṅgabhaṅgurāḥ ",
+          "location": {
+            "offset": 6774,
+            "line": 259,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6836,
+            "line": 260,
+            "column": 47
+          }
+        },
+        {
+          "type": "Text",
+          "value": "kastāsvahiphaṇacchatracchāyāsu ramate budhaḥ",
+          "location": {
+            "offset": 6837,
+            "line": 260,
+            "column": 48
+          }
+        }
+      ],
+      "location": {
+        "offset": 6767,
+        "line": 259,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "50",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:50"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "arthopārjanarakṣāṇāṃ jānannapi kadarthanām ",
+          "location": {
+            "offset": 6900,
+            "line": 264,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 6955,
+            "line": 265,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "yaḥ karoti spṛhāṃ mūḍho nṛpaśuṃ taṃ na saṃspṛśet",
+          "location": {
+            "offset": 6956,
+            "line": 265,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 6893,
+        "line": 264,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "51",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:51"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "manaso bāhyamārambhamāntaraṃ ca lunāti yaḥ ",
+          "location": {
+            "offset": 7038,
+            "line": 269,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 7090,
+            "line": 270,
+            "column": 44
+          }
+        },
+        {
+          "type": "Text",
+          "value": "samaṃ vaitṛṣṇyadātreṇa tasya kṣetraṃ prakāśate",
+          "location": {
+            "offset": 7091,
+            "line": 270,
+            "column": 45
+          }
+        }
+      ],
+      "location": {
+        "offset": 7031,
+        "line": 269,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "52",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:52"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "jagattvamajñasaṃbuddhaṃ jño vidannasadeva yat ",
+          "location": {
+            "offset": 7166,
+            "line": 274,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 7219,
+            "line": 275,
+            "column": 47
+          }
+        },
+        {
+          "type": "Text",
+          "value": "satīva tatra sphurati tadanabhyāsajṛmbhitam",
+          "location": {
+            "offset": 7220,
+            "line": 275,
+            "column": 48
+          }
+        }
+      ],
+      "location": {
+        "offset": 7159,
+        "line": 274,
+        "column": 1
+      }
+    },
+    {
+      "type": "Command",
+      "cmd": "verse",
+      "argument": "53",
+      "delimiter": null,
+      "attributes": {
+        "urn": "urn:vyasa:yv:mula_iast:6:53"
+      },
+      "metadata": {
+        "alias": "v"
+      },
+      "children": [
+        {
+          "type": "Text",
+          "value": "saṃsāranirvedadaśāmupetya satsaṃgamaṃ śāstramupetya tena ",
+          "location": {
+            "offset": 7279,
+            "line": 279,
+            "column": 8
+          }
+        },
+        {
+          "type": "SegmentBreak",
+          "location": {
+            "offset": 7348,
+            "line": 280,
+            "column": 58
+          }
+        },
+        {
+          "type": "Text",
+          "value": "śāstrārthabhāvena nirasya bhogānvaitṛṣṇyadārḍhyātparamārthameti",
+          "location": {
+            "offset": 7349,
+            "line": 280,
+            "column": 59
+          }
+        }
+      ],
+      "location": {
+        "offset": 7272,
+        "line": 279,
+        "column": 1
+      }
+    }
+  ]
+}
