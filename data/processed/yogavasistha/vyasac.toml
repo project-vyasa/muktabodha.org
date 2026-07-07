@@ -2,42 +2,18 @@
 name = "yogavasistha"
 title = "Yogavasistha"
 description = "The Yogavasistha, parsed from muktabodha.org"
-path_schema = ["book", "chapter"]
-publisher = "../../../"
-
+[publish]
+publisher_dir = "../../../"
 [urn]
+path_schema = ["book", "chapter"]
 corpus = "yv"
 hierarchy = ["book", "chapter", "verse"]
 
-[catalog]
-path = "../../../dist/catalog.json"
 
-[build.mula]
-target = "view"
-output_dir = "build"
-
-[[streams]]
-id = "primary"
-name = "Mula (IAST)"
-path = "content/mula_iast"
-
-[[streams]]
-id = "mula_devanagari"
-name = "Mula (Devanagari)"
-path = "content/mula_devanagari"
-
-[presentation.labels]
-"chapter.0" = "Prologue"
-"chapter.-1" = "Epilogue"
-"book.0" = "Preface"
-
-[[streams]]
-id = "commentary"
-name = "Commentary (IAST)"
-path = "content/commentary_iast"
-
-[[streams]]
-id = "commentary_devanagari"
-name = "Commentary (Devanagari)"
-path = "content/commentary_devanagari"
+[build.default]
+[streams]
+primary = { path = "content/mula_iast" }
+mula_devanagari = { path = "content/mula_devanagari" }
+commentary = { path = "content/commentary_iast" }
+commentary_devanagari = { path = "content/commentary_devanagari" }
 
