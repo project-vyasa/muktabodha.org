@@ -19,6 +19,26 @@ YV is one the largest works and we will work out defects for e2e publishiing by 
 3. YV in particular has layers of commentary, and will require multiple iterations to get the necessary frames properly defined and placed in the text.
 4. A design document is required to define the principles by which the semantic enrichment occurs. The design should also include the expectations from raw data processing pre-req step(s) e.g. verses are correctly taged and placed in the right chapter, book container structure.
 
+## Viewer features
+Let us be different from bg samples from Vyasa project.
+### Type A layout - one verse side by side
+Note: `|` is used to delineate columns in layout
+| IAST verse | Devanagari verse| 
+| IAST commentary | Devanagari commentary|
+
+User interaction features:
+1. Option to hide 1 column
+2. TBD some visual indications of `note[] annotations in the text
+
+### Type B layout - source text only stacked - range of verses within a chapter
+| Verse (local) URN |
+| Devanagari verse| 
+| IAST verse | 
+
+User interaction features:
+1. Option to hide one of IAST or Devanagari verse
+2. Choose a range of verses (or all if none specified) within a chapter
+
 
 
 
