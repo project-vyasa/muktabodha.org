@@ -1,11 +1,20 @@
+// Craft reading view — Devanāgarī block then IAST block; hairline divider only (no captions).
+// CSS: templates/html/reading.css
+
+`layout [
+{{ body }}
+]
+
 `item [
 `div { class="verse-content" } [
-    `div { class="verse-stack" } [
-        `div { class="deva-text mula-text" } [`div { class="stream-content" } [`stream { ref="mula_devanagari" }]]
-        `div { class="iast-text mula-text" } [`div { class="stream-content" } [`stream { ref="primary" }]]
-        `div { class="label" } [ Commentary ]
-        `div { class="deva-text comm-text" } [`div { class="stream-content" } [`stream { ref="commentary_devanagari" }]]
-        `div { class="iast-text comm-text" } [`div { class="stream-content" } [`stream { ref="commentary" }]]
+    `div { class="script-block devanagari-block" } [
+        `div { class="mula" } [`stream { ref="mula_devanagari" }]
+        `div { class="mula commentary" } [`stream { ref="commentary_devanagari" }]
+    ]
+    `div { class="script-block iast-block" } [
+        `div { class="script-hairline" } []
+        `div { class="iast" } [`stream { ref="mula_iast" }]
+        `div { class="iast commentary" } [`stream { ref="commentary_iast" }]
     ]
 ]
 ]

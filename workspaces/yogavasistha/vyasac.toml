@@ -1,19 +1,25 @@
 [workspace]
 name = "yogavasistha"
+id = "yogavasistha"
 title = "Yogavasistha"
 description = "The Yogavasistha, parsed from muktabodha.org"
+
 [publish]
 publisher_dir = "../../muktabodha"
+
 [urn]
 path_schema = ["book", "chapter"]
 corpus = "yv"
 hierarchy = ["book", "chapter", "verse"]
 
-
-[build.default]
 [streams]
 primary = { path = "content/mula_iast" }
 mula_devanagari = { path = "content/mula_devanagari" }
 commentary = { path = "content/commentary_iast" }
 commentary_devanagari = { path = "content/commentary_devanagari" }
 
+[build.default]
+target = "view"
+streams = ["mula_devanagari", "mula_iast", "commentary_devanagari", "commentary_iast"]
+publisher_css = ["styles/indic-verse.css"]
+css = ["templates/html/theme.css", "templates/html/reading.css"]
