@@ -1,0 +1,21 @@
+# Local catalog server for the muktabodha publisher.
+# Run from repo root: caddy run --config muktabodha/Caddyfile
+
+:9101 {
+	header {
+		Access-Control-Allow-Origin "*"
+		Access-Control-Allow-Methods "GET, POST, OPTIONS"
+		Access-Control-Allow-Headers "*"
+	}
+
+	handle /registry.json {
+		root * /Users/anand/Projects/project-vyasa/muktabodha.org/muktabodha
+		rewrite * /local-registry.json
+		file_server
+	}
+
+	handle_path /muktabodha/* {
+		root * /Users/anand/Projects/project-vyasa/muktabodha.org/muktabodha/dist
+		file_server
+	}
+}

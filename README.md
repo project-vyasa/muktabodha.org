@@ -29,9 +29,17 @@ The primary goal of this repository is to:
 4. Compile the texts natively using the `vyasac` compiler into the `.vyview` SQLite format.
 5. Publish a unified `catalog.json` serving the archives directly via GitHub Pages.
 
+## 📂 Repository Structure
+
+- `muktabodha/`: Publisher catalog root (`publisher.toml`, shared `styles/`, generated `dist/`, `Caddyfile`, `local-registry.json`). Matches `[publisher] identifier = "muktabodha"`. Workspaces point here via `[publish] publisher_dir`.
+- `workspaces/`: Vyasa publication workspaces (`vyasac.toml`, content, templates, annotations).
+- `data/`: Pipeline inputs — metadata extracts, raw archives (not deployed).
+- `src/`: Data processing scripts (`process.ts`, `verify.ts`, etc.).
+- `notes/`, `docs/`: Design notes and enrichment docs.
+
 ## 🛠️ Setup
 
-Ensure you have [Bun](https://bun.sh/) and the `vyasac` compiler (via `cargo`) installed.
+Ensure you have [Bun](https://bun.sh/) and the `vyasac` compiler installed.
 
 Install pipeline dependencies:
 ```sh
@@ -40,14 +48,28 @@ bun install
 
 ## 📦 Build & Deployment
 
-The build pipeline automatically packs the workspaces and updates the registry catalog.
+Each `build` runs **pack** then **publish** (copies into `muktabodha/dist/` and refreshes `catalog.json`).
 
-To build all texts locally:
 ```sh
-bun run build
+bun run build          # all workspaces
+bun run build:yv       # Yogavasistha only
 ```
 
-To deploy to GitHub Pages (publishes the `dist/` folder):
+Deploy to GitHub Pages (runs `build` via `predeploy`):
 ```sh
 bun run deploy
 ```
+
+## Local development (Caddy)
+
+Serve this publisher’s catalog locally (single-repo workflow):
+
+```bash
+caddy run --config muktabodha/Caddyfile
+```
+
+In the viewer Settings → Catalog Sources:
+- **Custom Registries:** `http://localhost:9101/registry.json`
+- **Custom Catalogs:** `http://localhost:9101/muktabodha/catalog.json`
+
+Open publications with `?catalog=http://localhost:9101/muktabodha/catalog.json`.

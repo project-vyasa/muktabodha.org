@@ -171,7 +171,7 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
 }
 
 async function main() {
-  const outputBase = join(process.cwd(), "data", "processed", "yogavasistha", "content");
+  const outputBase = join(process.cwd(), "workspaces", "yogavasistha", "content");
   
   const parts = [
     { part: 1, id: "M00335" },

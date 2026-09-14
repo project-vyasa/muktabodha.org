@@ -150,7 +150,7 @@ async function verifyStream(iastDir: string, devDir: string, reportLines: string
 }
 
 async function main() {
-    const baseDir = join(process.cwd(), "data", "processed", "yogavasistha");
+    const baseDir = join(process.cwd(), "workspaces", "yogavasistha");
     const contentDir = join(baseDir, "content");
     
     const parts = [1, 2, 3, 4, 5, 6];

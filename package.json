@@ -4,10 +4,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "vyasac": "cargo run --manifest-path ../vyasa/vyasac/Cargo.toml --",
-    "build:yv": "bun run vyasac pack data/processed/yogavasistha && bun run vyasac publish data/processed/yogavasistha",
+    "pack:yv": "vyasac pack workspaces/yogavasistha",
+    "publish:yv": "vyasac publish workspaces/yogavasistha",
+    "build:yv": "bun run pack:yv && bun run publish:yv",
     "build": "bun run build:yv",
-    "deploy": "gh-pages -d dist --dotfiles --nojekyll"
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d muktabodha/dist --dotfiles --nojekyll"
   },
   "devDependencies": {
     "@types/bun": "latest",
