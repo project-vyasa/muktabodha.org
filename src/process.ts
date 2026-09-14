@@ -1,6 +1,15 @@
 import { mkdir, writeFile } from "fs/promises";
 import { join } from "path";
 
+let metadata: any = null;
+try {
+  const metadataPath = join(process.cwd(), "data", "metadata", "yogavasistha", "metadata.json");
+  const metadataText = await Bun.file(metadataPath).text();
+  metadata = JSON.parse(metadataText);
+} catch (e) {
+  console.warn("No metadata.json loaded or failed to parse:", e);
+}
+
 function parseNum(str: string): number {
   const map: Record<string, string> = {
     '०': '0', '१': '1', '२': '2', '३': '3', '४': '4',
@@ -87,6 +96,19 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
     const isProlog = chapNum === 0;
     const fileName = isProlog ? "prolog.vy" : `${chapNum}.vy`;
     
+    const langKey = lang === "devanagari" ? "devanagari" : "iast";
+    const bookTitle = metadata?.books?.[partNumber]?.title?.[langKey];
+    const explicitChapTitle = metadata?.books?.[partNumber]?.chapters?.[chapNum]?.title?.[langKey];
+    const chapTitle = explicitChapTitle || (langKey === "devanagari" ? `सर्गः ${chapNum}` : `Sarga ${chapNum}`);
+
+    let contextHeader = "";
+    if (!isProlog && (bookTitle || chapTitle)) {
+      const parts: string[] = [];
+      if (bookTitle) parts.push(`book.title = "${bookTitle}"`);
+      if (chapTitle) parts.push(`chapter.title = "${chapTitle}"`);
+      contextHeader = `\`set context {\n  ${parts.join(",\n  ")}\n}\n\n`;
+    }
+
     // Mula stream
     if (currentMula.size > 0) {
       const mulaStreamDir = isProlog 
@@ -102,6 +124,8 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
           contentToWrite = `\`set { scope="paratext" }\n\n` + contentToWrite;
           const contextPath = join(mulaStreamDir, "context.vy");
           await writeFile(contextPath, "`set { chapter = \"0\" }\n", "utf8");
+      } else if (contextHeader) {
+          contentToWrite = contextHeader + contentToWrite;
       }
       
       await writeFile(mulaPath, contentToWrite, "utf8");
@@ -122,6 +146,8 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
           contentToWrite = `\`set { scope="paratext" }\n\n` + contentToWrite;
           const contextPath = join(commStreamDir, "context.vy");
           await writeFile(contextPath, "`set { chapter = \"0\" }\n", "utf8");
+      } else if (contextHeader) {
+          contentToWrite = contextHeader + contentToWrite;
       }
       
       await writeFile(commPath, contentToWrite, "utf8");
