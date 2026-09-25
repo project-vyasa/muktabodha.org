@@ -167,9 +167,9 @@ async function main() {
         let globalMissing = 0;
         
         // 1. Verify Mula
-        const mulaIastDir = join(contentDir, "mula_iast", part.toString());
-        const mulaDevDir = join(contentDir, "mula_devanagari", part.toString());
-        const mulaStats = await verifyStream(mulaIastDir, mulaDevDir, reportLines, "Mula");
+        const mulaRootDir = join(contentDir, "root", part.toString());
+        const mulaDevDir = join(contentDir, "mula", part.toString());
+        const mulaStats = await verifyStream(mulaRootDir, mulaDevDir, reportLines, "Mula");
         globalTotal += mulaStats.total;
         globalPerfect += mulaStats.perfect;
         globalMismatches += mulaStats.mismatches;

@@ -52,7 +52,7 @@ body {
 }
 
 /* Grid: weave_layout injects packed html_blocks into .vyasa-block-{streamId} columns. */
-.vyasa-block-mula_devanagari,
+.vyasa-block-mula,
 .vyasa-block-commentary_devanagari {
 	font-family: var(--vyasa-font-deva);
 	line-height: var(--vyasa-stream-body-line);
@@ -61,7 +61,7 @@ body {
 	overflow-wrap: break-word;
 }
 
-.vyasa-block-mula_devanagari {
+.vyasa-block-mula {
 	font-size: var(--vyasa-stream-body-size);
 	font-weight: var(--vyasa-stream-body-weight);
 }
@@ -71,7 +71,7 @@ body {
 	color: var(--vyasa-stream-commentary-color);
 }
 
-.vyasa-block-mula_iast,
+.vyasa-block-root,
 .vyasa-block-commentary_iast {
 	font-family: var(--vyasa-font-body);
 	font-style: italic;
@@ -81,7 +81,7 @@ body {
 	overflow-wrap: break-word;
 }
 
-.vyasa-block-mula_iast {
+.vyasa-block-root {
 	font-size: var(--vyasa-stream-body-size);
 	color: var(--vyasa-stream-body-color);
 }
@@ -90,8 +90,8 @@ body {
 	font-size: var(--vyasa-stream-commentary-size);
 }
 
-.vyasa-block-mula_devanagari .verse,
-.vyasa-block-mula_iast .verse,
+.vyasa-block-mula .verse,
+.vyasa-block-root .verse,
 .vyasa-block-commentary_devanagari .verse,
 .vyasa-block-commentary_iast .verse {
 	white-space: pre-line;

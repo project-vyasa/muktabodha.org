@@ -2,16 +2,24 @@
 
 **Audience:** vyasac / vyasav agent  
 **Publication:** Yogavasistha (`workspaces/yogavasistha`)  
-**Status:** Workaround in place; root fix belongs in the toolchain
+**Status:** Packed id is the `content/<folder>` name. Stream facts live in each folder’s `stream.toml`. `[build.default] streams` lists those folder names. Templates use packed names (`mula`, `root`, …); `ref="primary"` is a pack-time alias for the stream with `primary = true`.
 
 ## Problem
 
 Craft view templates (`reading.vy`, etc.) can reference streams by **logical id** from `vyasac.toml`:
 
 ```toml
-[streams]
-primary = { path = "content/mula_iast" }
-commentary = { path = "content/commentary_iast" }
+# content/mula/stream.toml
+language = "sa"
+script = "Deva"
+kind = "source"
+primary = true
+```
+
+```toml
+# content/commentary_iast/stream.toml
+kind = "commentary"
+# ...
 ```
 
 ```vy
@@ -19,14 +27,14 @@ commentary = { path = "content/commentary_iast" }
 `stream { ref="commentary" }
 ```
 
-At **weave time** (`vyasav` `weave_view_native`), substitution only matches `<stream ref="…">` placeholders against **runtime stream names** — the keys in the viewport row set / SQLite `streams.name` table (e.g. `mula_iast`, `commentary_iast`).
+At **weave time** (`vyasav` `weave_view_native`), substitution only matches `<stream ref="…">` placeholders against **runtime stream names** — the keys in the viewport row set / SQLite `streams.name` table (e.g. `mula`, `root`, `commentary_iast`).
 
 Refs that do not match a runtime name are **silently stripped** (see `wasm.rs`: “Clear out missing streams”). The woven HTML shows empty blocks with no error.
 
-### Observed symptom
+### Observed symptom (historical)
 
-- Devanagari streams render (refs use runtime directory names: `mula_devanagari`, `commentary_devanagari`)
-- IAST streams empty (refs used logical names: `primary`, `commentary`)
+- Devanagari streams render when refs use runtime directory names
+- IAST streams empty when refs used logical names only (`primary`, `commentary`) without pack-time rewrite
 
 ### Existing registry (pack side only)
 
@@ -34,12 +42,12 @@ Refs that do not match a runtime name are **silently stripped** (see `wasm.rs`: 
 
 | Logical | Runtime (YV) |
 |---------|----------------|
-| `primary` | `mula_iast` |
+| `primary` | `mula` (`primary = true` in `content/mula/stream.toml`) |
 | `commentary` | `commentary_iast` |
-| `mula_devanagari` | `mula_devanagari` |
+| `root` | `root` |
 | `commentary_devanagari` | `commentary_devanagari` |
 
-This registry is used for vocabulary `localization { extend = "primary" }` merge, but **is not applied** when packing or weaving view template `<stream ref="…">` tags.
+This registry is used for vocabulary `localization { extend = "primary" }` merge, but **is not applied** when packing or weaving view template `<stream ref="…">` tags (unless pack rewrites refs).
 
 ## Expected behavior
 
@@ -56,7 +64,9 @@ Publishers should be able to write `ref="primary"` and `ref="commentary"` consis
 `reading.vy` uses **runtime names** only:
 
 ```vy
-`stream { ref="mula_iast" }
+`stream { ref="mula" }
+`stream { ref="root" }
+`stream { ref="commentary_devanagari" }
 `stream { ref="commentary_iast" }
 ```
 

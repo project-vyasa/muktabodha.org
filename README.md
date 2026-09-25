@@ -48,14 +48,23 @@ bun install
 
 ## 📦 Build & Deployment
 
-Each `build` runs **pack** then **publish** (copies into `muktabodha/dist/` and refreshes `catalog.json`).
+**Pipeline** (raw archives → workspace `.vy` content; requires `data/raw/`):
+
+```sh
+bun run metadata:yv    # data/metadata/yogavasistha/metadata.json
+bun run transform:yv   # workspaces/yogavasistha/content/
+bun run verify:yv      # audit_report_part*.txt in workspace
+bun run pipeline:yv    # all three
+```
+
+**Publish** (pack + copy to `muktabodha/dist/`; requires generated `content/`):
 
 ```sh
 bun run build          # all workspaces
 bun run build:yv       # Yogavasistha only
 ```
 
-Deploy to GitHub Pages (runs `build` via `predeploy`):
+Deploy to GitHub Pages (runs `build` via `predeploy`; does not run `pipeline:yv`):
 ```sh
 bun run deploy
 ```

@@ -42,6 +42,10 @@ function cleanVerseText(text: string): string {
     return cleaned.trim();
 }
 
+function mulaStreamDirName(lang: string): string {
+  return lang === "devanagari" ? "mula" : "root";
+}
+
 async function processFile(filePath: string, outputBaseDir: string, lang: string, partNumber: number) {
   let fileContent = "";
   try {
@@ -111,9 +115,10 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
 
     // Mula stream
     if (currentMula.size > 0) {
+      const mulaDirName = mulaStreamDirName(lang);
       const mulaStreamDir = isProlog 
-        ? join(outputBaseDir, `mula_${lang}`, partNumber.toString(), "frontmatter")
-        : join(outputBaseDir, `mula_${lang}`, partNumber.toString());
+        ? join(outputBaseDir, mulaDirName, partNumber.toString(), "frontmatter")
+        : join(outputBaseDir, mulaDirName, partNumber.toString());
       await mkdir(mulaStreamDir, { recursive: true });
       const mulaPath = join(mulaStreamDir, fileName);
       
@@ -198,7 +203,7 @@ async function processFile(filePath: string, outputBaseDir: string, lang: string
 
 async function main() {
   const outputBase = join(process.cwd(), "workspaces", "yogavasistha", "content");
-  
+
   const parts = [
     { part: 1, id: "M00335" },
     { part: 2, id: "M00336" },

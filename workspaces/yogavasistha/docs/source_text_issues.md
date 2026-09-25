@@ -19,7 +19,7 @@ Currently, these artifacts are preserved verbatim in the extracted `.vy` files. 
 The `process.ts` script now globally strips `##-` and `##` artifacts from the text. This cleanly joins the words that were split by hyphenation without losing characters, preserving text integrity.
 
 ## 2. Stray Backticks (Compiler Conflicts)
-**Location:** `content/mula_iast/6/36.vy` (Line 9: `nirj`neyajñeyarūpiṇī`)
+**Location:** `content/root/6/36.vy` (Line 9: `nirj`neyajñeyarūpiṇī`)
 
 **Description:**
 The source text pipeline accidentally injected or preserved a single backtick (`` ` ``) in the middle of a Sanskrit word. Because the Vyasa parser specifically relies on backticks as the control character to initiate semantic commands, a stray backtick immediately triggers an `Unknown command` parsing error (e.g., `Unknown command: 'neyaj'`).

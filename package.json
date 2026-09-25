@@ -4,6 +4,10 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "metadata:yv": "bun run src/extract_metadata.ts",
+    "transform:yv": "bun run src/process.ts",
+    "verify:yv": "bun run src/verify.ts",
+    "pipeline:yv": "bun run metadata:yv && bun run transform:yv && bun run verify:yv",
     "pack:yv": "vyasac pack workspaces/yogavasistha",
     "publish:yv": "vyasac publish workspaces/yogavasistha",
     "build:yv": "bun run pack:yv && bun run publish:yv",

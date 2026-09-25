@@ -6,10 +6,12 @@ This directory contains the processed Vyasa workspace for the **Yogavasistha**, 
 
 The text is divided into four distinct streams located in the `content/` directory to support both the original script and transliteration, as well as separate views for the mula verses and the commentary:
 
-- `mula_devanagari/`: The core text (mula) in Devanagari script.
-- `mula_iast/`: The core text (mula) transliterated into IAST.
+- `mula/`: The core text (mūla) in Devanagari script.
+- `root/`: The core text (mūla) transliterated into IAST.
 - `commentary_devanagari/`: The *tātparyaprakāśa* commentary in Devanagari script.
 - `commentary_iast/`: The *tātparyaprakāśa* commentary transliterated into IAST.
+
+Each stream folder includes a `stream.toml` (`language`, `script`, `kind`; exactly one stream sets `primary = true` — `mula`).
 
 ## Structure and Nesting
 
